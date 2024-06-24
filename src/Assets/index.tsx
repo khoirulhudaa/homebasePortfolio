@@ -33,15 +33,27 @@ import Git1 from './git1.png'
 import Git2 from './git2.png'
 import Git3 from './git3.png'
 import Git4 from './git4.png'
+import Cirebon from './Juara1IKMIMATCHCAMPHIONS.jpg'
+import Majalengka from './Juara2DiesNatalies.jpg'
+import Jakarta from './Juara2 I_O.jpg'
+import Bali from './pnb2020.jpg'
+import JWD from './JWD.jpg'
+import Linkedin from './linkedin.png'
 
 export {
+    Linkedin,
     ThreeD,
+    Cirebon,
+    Majalengka,
+    Jakarta,
+    Bali,
     HTML,
     CSS,
     Reacts,
     Node,
     TS,
     Git,
+    JWD,
     BS,
     Redux,
     TW,
