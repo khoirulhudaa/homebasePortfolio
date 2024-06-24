@@ -26,12 +26,12 @@ const Homepage: React.FC = () => {
         {/* Nabar */}
         <nav className={`absolute left-0 top-0 z-[999999999] py-[20px] w-[100vw] h-max lg:before:absolute lg:before:left-[62px] lg:before:top-[25px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full bg-transparent`}>
 
-          <div className='w-full flex items-center px-6 justify-between'>
+          <div className='w-full flex lg:hidden items-center px-6 justify-between'>
             {/* Title Web */}
             <h2 className='font-bold text-white relative top-1 text-[24px]'>Portfolio</h2>
             
             {/* Humberger Button */}
-            <div onClick={() => setIsOpen(true)} className='w-[40px] h-[40px] rounded-md border border-white cursor-pointer flex flex-col items-center active:scale-[0.98] hover:brightness-[90%] justify-center relative'>
+            <div onClick={() => setIsOpen(true)} className='w-[40px] h-[40px] rounded-md border border-white cursor-pointer hidden lg:flex flex-col lg:flex-row items-center active:scale-[0.98] hover:brightness-[90%] justify-center relative'>
               <div className='w-[80%] h-[1px] bg-white'></div>
               <div className='w-[80%] h-[1px] my-2 bg-white'></div>
               <div className='w-[80%] h-[1px] bg-white'></div>
@@ -39,7 +39,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* Sidebar - Mobile only */}
-          <div className={`fixed w-[100vw] h-screen overflow-y-auto bg-white lg:hidden block lg:hidden z-[999] shadow-md p-6 top-0 ${isOpen ? 'right-0 duration-200' : 'right-[-100%] duration-200 ease-in'}`}>
+          <div className={`fixed w-[100vw] h-screen overflow-y-auto bg-white block lg:hidden z-[999] shadow-md p-6 top-0 ${isOpen ? 'right-0 duration-200' : 'right-[-100%] duration-200 ease-in'}`}>
             
             <div onClick={() => setIsOpen(false)} className='absolute w-[40px] h-[40px] rounded-lg bg-red-500 text-white flex items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%] shadow-md top-5 right-3'>
               <FaTimes />
@@ -98,14 +98,14 @@ const Homepage: React.FC = () => {
         </nav>
         {/* Akhir navbar */}
 
-        <img src={ThreeD} alt="3D" className='absolute opacity-[0.1] lg:opacity-[0.7] z-[1] top-[70px] lg:top-[-200px] lg:right-[-250px] lg:scale-[0.6]' />
+        <img src={ThreeD} alt="3D" className='absolute opacity-[0.1] lg:opacity-[0.7] z-[1] top-[70px] lg:top-[-100px] lg:right-[-250px] lg:scale-[0.6]' />
        
         {/* Blur light */}
         <div className='w-[100px] h-[1200px] bg-white blur-[220px] rounded-full fixed z-[9] top-[0px] right-0'></div>
         <div className='w-[100px] h-[1200px] bg-blue-600 blur-[220px] rounded-full fixed z-[9] top-[0px] left-0'></div>
         {/* Akhir Blur light */}
        
-        <div id='home' className='relative z-[444] lg:px-16 lg:pl-0 px-6 lg:pb-[80px] w-[94vw] lg:w-[100%] h-max lg:border-l-[3px] lg:lg:ml-12 mt-[50px] lg:mt-[90px] pt-16 border-white lg:before:absolute lg:before:left-[-30px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full'>
+        <div id='home' className='relative z-[444] lg:px-16 px-6 lg:pb-[80px] w-[94vw] lg:w-[100%] h-max lg:border-l-[3px] lg:lg:ml-12 mt-[50px] lg:mt-[90px] pt-16 border-white lg:before:absolute lg:before:left-[-30px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full'>
 
           <div id='asteroid1a'></div>
           <div id='asteroid2a'></div>
@@ -130,7 +130,7 @@ const Homepage: React.FC = () => {
           </div>
           <h1 className='mt-4 text-[28px] lg:text-[94px] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
           <div className='w-max flex items-center overflow-hidden rounded-[20px]'>
-            <button className='outline-0 border-white border py-3 plg:y-5 lg:px-0 px-4 w-max lg:w-[400px] rounded-lg lg:rounded-full h-max text-center font-[600] my-7 text-white'>Download Resume</button>
+            <button className='outline-0 border-white border py-3 lg:py-5 px-4 lg:px-10 w-max rounded-lg lg:rounded-full h-max text-center font-[600] my-7 text-white'>Download Resume</button>
           </div>
         </div>
         
@@ -189,9 +189,9 @@ const Homepage: React.FC = () => {
               </div>
             </div>
             
-            <div className='w-[90vw] lg:flex flex-col z-40 flex relative left-[0px] mt-[16px] lg:mt-[60px] h-max'>
+            <div className='w-[90vw] lg:flex flex-col lg:flex-row lg:flex-row z-40 flex relative left-[0px] mt-[16px] lg:mt-[60px] h-max'>
                 <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-4 h-[max] mr-8 p-4 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
-                  <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
+                  <div className='w-full h-max relative flex flex-col lg:flex-row justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
                       <h2 className='text-slate-800 font-bold text-[22px] lg:text-[28px]'>Unipay</h2>
                       <h3 className='text-[13px] lg:text-[17px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
@@ -218,7 +218,7 @@ const Homepage: React.FC = () => {
                 </div>
             </div>
 
-            <div className='w-[90vw] lg:flex flex-col z-40 flex relative left-[0px] mt-[0px] lg:mt-14 h-max'>
+            <div className='w-[90vw] lg:flex flex-col lg:flex-row z-40 flex relative left-[0px] mt-[0px] lg:mt-14 h-max'>
                 <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-4 h-[max] mr-8 p-4 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                   <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
@@ -249,7 +249,7 @@ const Homepage: React.FC = () => {
                 </div>
             </div>
 
-            <div className='w-[90vw] lg:flex flex-col z-40 flex relative left-[0px] mt-0 lg:mt-14 h-max'>
+            <div className='w-[90vw] lg:flex flex-col lg:flex-row z-40 flex relative left-[0px] mt-0 lg:mt-14 h-max'>
                 <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-4 h-[max] mr-8 p-4 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                   <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
@@ -356,10 +356,10 @@ const Homepage: React.FC = () => {
           <div id='github' className='relative w-[92vw] text-left p-6 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 rounded-[12px] border border-slate-200 h-[500px]'>
             <h3 className='text-slate-800 text-[13px] lg:text-[22px] w-[94%] text-justify lg:w-[70%] leading-loose'>GitHub Actions automates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
             <div className='my-6 flex items-center lg:w-1/2'>
-              <img src={Git2} alt="icon-from-git" className='absolute lg:w-[100%] w-[45%] bottom-0 right-0 rotate-[-20deg] mr-10' title='Starstruck' />
-              <img src={Git4} alt="icon-from-git" className='absolute lg:w-[100%] w-[45%] bottom-[12px] lg:bottom-0 left-0 lg:right-[14%] scale-[0.9] rotate-[-20deg] mr-10' title='Pull SHark' />
-              <img src={Git1} alt="icon-from-git" className='absolute lg:w-[100%] w-[45%] bottom-[-16%] right-[30%] rotate-[-20deg] mr-10' title='Quickdraw' />
-              <img src={Git3} alt="icon-from-git" className='absolute lg:w-[100%] w-[45%] bottom-[90px] lg:top-0 right-0 rotate-[-20deg]' title='Yolo' />
+              <img src={Git2} alt="icon-from-git" className='absolute lg:w-[300px] w-[45%] bottom-0 right-0 rotate-[-20deg] mr-10' title='Starstruck' />
+              <img src={Git4} alt="icon-from-git" className='absolute lg:w-[300px] w-[45%] bottom-[12px] lg:bottom-5 left-0 lg:left-[55%] scale-[0.9] rotate-[-20deg] mr-10' title='Pull SHark' />
+              <img src={Git1} alt="icon-from-git" className='absolute lg:w-[300px] w-[45%] bottom-[-16%] right-[30%] rotate-[-20deg] mr-10' title='Quickdraw' />
+              <img src={Git3} alt="icon-from-git" className='absolute lg:w-[300px] w-[45%] bottom-[90px] lg:top-0 right-0 rotate-[-20deg]' title='Yolo' />
             </div>
             <Link to={'https://github.com/khoirulhudaa'}>
               <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98] rounded-full mt-[-22px] lg:mt-6 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:text-[16px] text-[12px] lg:px-8 py-3'>
