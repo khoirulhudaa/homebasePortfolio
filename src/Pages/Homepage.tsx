@@ -128,19 +128,19 @@ const Homepage: React.FC = () => {
           <div className='w-max flex items-center'>
             <p className='rounded-full border border-white text-center px-5 py-2 w-max text-white flex items-center'>Fresh Graduate</p>
           </div>
-          <h1 className='mt-4 text-[36px] lg:text-[94px] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
+          <h1 className='mt-4 text-[38px] lg:text-[94px] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
           <div className='w-max flex items-center overflow-hidden rounded-[20px]'>
             <button className='outline-0 border-white border py-3 lg:py-5 px-4 lg:px-10 w-max rounded-lg lg:rounded-full h-max text-center font-[600] my-7 text-white'>Download Resume</button>
           </div>
         </div>
         
-        <div id='languages' className='lg:flex hidden relative z-[444] pb-[30px] lg:pb-[80px] px-6 lg:px-16 lg:pt-4 w-[80%] h-max lg:border-l-[3px] lg:ml-12 border-white lg:before:absolute lg:before:left-[-30px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full'>
-          <p className='text-slate-400 lg:flex items-center w-[94%] lg:w-max text-[16px] lg:text-[24px] mt-4'>Muhammad Khoirulhuda a 
+        <div id='languages' className='lg:flex flex-col hidden relative z-[444] pb-[30px] lg:pb-[80px] px-6 lg:px-16 lg:pt-4 w-[80%] h-max lg:border-l-[3px] lg:ml-12 border-white lg:before:absolute lg:before:left-[-30px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full'>
+          <p className='text-slate-400 lg:flex items-center w-[94%] lg:w-max text-[16px] lg:text-[24px] ml-[10px] mt-4'>Muhammad Khoirulhuda a 
             <div className='flex items-center ml-2'>
               <span className='rounded-full text-black text-[18px] lg:mx-2 px-4 py-1 text-center bg-gradient-to-r from-white via-slate-400 to-white'>#FrontEndDeveloper</span> <span className='rounded-full text-black text-[18px] lg:mx-2 px-4 py-1 text-center bg-gradient-to-r from-white via-slate-400 to-white'>#MERNStack</span> and <span className='rounded-full text-black text-[18px] lg:mx-2 px-4 py-1 text-center bg-gradient-to-r from-white via-slate-400 to-white'>#Freelancer</span>
             </div>
           </p>
-          <div className='w-[80vw] z-40 flex items-center lg:flex-no-wrap flex-wrap justify-between mt-12'>
+          <div className='w-[80vw] z-40 flex items-center lg:flex-no-wrap flex-wrap justify-between mt-12 ml-[10px]'>
             <img loading='lazy' src={Reacts} alt='iconLanguage' className='w-[34px] lg:w-[80px] lg:mb-0 mb-5 lg:mr-14 z-[99999999999] cursor-pointer hover:grayscale-[0%] grayscale-[100%]' />
             <img loading='lazy' src={Node} alt='iconLanguage' className='w-[34px] lg:w-[80px] lg:mb-0 mb-5 lg:mr-14 z-[99999999999] cursor-pointer hover:grayscale-[0%] grayscale-[100%]' />
             <img loading='lazy' src={Redux} alt='iconLanguage' className='w-[34px] lg:w-[80px] lg:mb-0 mb-5 lg:mr-14 z-[99999999999] cursor-pointer hover:grayscale-[0%] grayscale-[100%]' />
@@ -152,10 +152,10 @@ const Homepage: React.FC = () => {
 
         <div id='product' className='relative flex flex-col items-center z-[4444] mt-[-20px] pt-[0px] pb-[0px] w-[100%] h-max lg:border-l-[3px] ml-0 lg:ml-12 border-white'>
             <img src={SquareLine} alt="3D" className='absolute opacity-[0.3] z-[1] top-[-150px] right-[-420px] scale-[0.5]' />
-            <div className='w-[150px] absolute top-[-60px] left-0 h-[300px] lg:flex hidden'>
+            <div className='w-[150px] absolute top-[-60px] left-0 h-[300px] lg:inline hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
-            <div className='relative z-[4444] pb-[0px] lg:px-6 lg:px-16 w-[100%] mt-10 lg:mt-[150px] lg:top-[-45px] h-max ml-12 lg:ml-24'>
+            <div className='relative z-[4444] pb-[0px] lg:px-6 lg:px-16 w-[100%] mt-10 lg:mt-[150px] lg:top-[-45px] h-max ml-12 lg:ml-[170px]'>
               <div className='w-max flex items-center'>
                 <div className='w-max border border-white rounded-full text-white flex items-center text-center px-5 py-1'>
                   My work
@@ -302,7 +302,7 @@ const Homepage: React.FC = () => {
         </div>
 
         <div id='linkedin' className='relative flex flex-col z-[4444] pt-12 lg:pt-[130px] lg:pt-[210px] pb-[30px] w-[100%] h-max lg:border-l-[3px] ml-0 lg:ml-12 border-white'>
-          <div className='w-[150px] absolute top-[20px] left-0 lg:h-[300px] lg:flex hidden'>
+          <div className='w-[150px] absolute top-[20px] left-0 lg:h-[300px] lg:inline hidden'>
             <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
           </div>
           <div className='relative z-[4444] pb-[0px] px-6 lg:px-16 w-[100%] mt-[0px] lg:top-[-75px] h-max ml-[0px] lg:ml-12'>
