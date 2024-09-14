@@ -7,8 +7,8 @@ const ModalCertification = ({ image, text, close, title }:{ image?: any; text?: 
       <div className="relative w-[75%] h-max overflow-y-auto bg-white rounded-[14px] pt-10 pb-6 px-6 shadow-lg z-[999999999999]">
         <div className="relative flex w-full h-full">
             <div className="w-1/2 h-full flex">
-                <div className="w-full h-max mb-4 overflow-hidden border border-slate-400 rounded-lg">
-                    <img src={image} alt="image" className="w-full h-full object-cover" />
+                <div className="w-full max-h-[330px] mb-4 overflow-hidden border border-slate-400 rounded-lg">
+                    <img src={image} alt="image" className="w-full h-full object-contain" />
                 </div>
             </div>
             <div className="relative h-full w-1/2 pl-8 pt-8">
