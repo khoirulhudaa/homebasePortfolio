@@ -55,9 +55,6 @@ const Homepage: React.FC = () => {
                 <a href="#home" className='w-full mb-4 border-b border-b-slate-200'>
                   <li className='py-4' onClick={() => setSidebar(false)}>Home</li>
                 </a>
-                <a href="#languages" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Languages</li>
-                </a>
                 <a href="#product" className='w-full mb-4 border-b border-b-slate-200'>
                   <li className='py-4' onClick={() => setSidebar(false)}>Product</li>
                 </a>
