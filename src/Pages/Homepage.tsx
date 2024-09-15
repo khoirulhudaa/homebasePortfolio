@@ -9,8 +9,8 @@ const Homepage: React.FC = () => {
 
   const [isModal, setIsModal] = useState<boolean>(false);
   const [selectimage, setSelectImage] = useState<string>('');
+  const [sidebar, setSidebar] = useState<boolean>(false);
   const [text, setText] = useState<string>('');
-  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <div className='relative min-h-screen overflow-x-hidden bg-[#0d1117] lg:pl-10'>
@@ -23,49 +23,55 @@ const Homepage: React.FC = () => {
             null
         }
 
+        {/* Humberger */}
+        <div onClick={() => setSidebar(true)} className='absolute z-[333] top-6 right-7 lg:hidden shadow-md w-[40px] h-[40px] rounded-md cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-100 flex flex-col items-center justify-center border border-slate-300'>
+          <div className='w-[80%] h-[2px] bg-slate-200 my-1'></div>
+          <div className='w-[80%] h-[2px] bg-slate-200 my-1'></div>
+          <div className='w-[80%] h-[2px] bg-slate-200 my-1'></div>
+        </div>
+
+        {/* Sidebar */}
+        <div className={`w-[100vw] h-[100vh] bg-white p-7 bg-white z-[9099999] fixed top-0 ${sidebar ? 'left-0 duration-100' : 'left-[-100%] duration-100'}`}>
+
+        </div>
+
+
         {/* Nabar */}
-        <nav className={`absolute left-0 top-0 z-[999999999] py-[20px] w-[100vw] h-max lg:before:absolute lg:before:left-[62px] lg:before:top-[25px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full bg-transparent`}>
+        <nav className={`absolute left-0 top-0 z-[999999999] py-[20px] w-max lg:w-[100v] h-max lg:before:absolute lg:before:left-[62px] lg:before:top-[25px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full bg-transparent`}>
 
           <div className='w-full flex lg:hidden items-center px-6 justify-between'>
             {/* Title Web */}
             <h2 className='font-bold text-white relative top-1 text-[32px] lg:text-[24px]'>Portfolio</h2>
-            
-            {/* Humberger Button */}
-            <div onClick={() => setIsOpen(true)} className='w-[40px] h-[40px] rounded-md border border-white cursor-pointer hidden lg:flex flex-col lg:flex-row items-center active:scale-[0.98] hover:brightness-[90%] justify-center relative'>
-              <div className='w-[80%] h-[1px] bg-white'></div>
-              <div className='w-[80%] h-[1px] my-2 bg-white'></div>
-              <div className='w-[80%] h-[1px] bg-white'></div>
-            </div>
           </div>
 
           {/* Sidebar - Mobile only */}
-          <div className={`fixed w-[100vw] h-screen overflow-y-auto bg-white block lg:hidden z-[999] shadow-md p-6 top-0 ${isOpen ? 'right-0 duration-200' : 'right-[-100%] duration-200 ease-in'}`}>
+          <div className={`fixed w-[100vw] h-screen overflow-y-auto bg-white block lg:hidden z-[999999] shadow-md p-6 top-0 ${sidebar ? 'right-0 duration-200' : 'right-[-100%] duration-200 ease-in'}`}>
             
-            <div onClick={() => setIsOpen(false)} className='absolute w-[40px] h-[40px] rounded-lg bg-red-500 text-white flex items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%] shadow-md top-5 right-3'>
+            <div onClick={() => setSidebar(false)} className='absolute w-[40px] h-[40px] rounded-lg bg-red-500 text-white flex items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%] shadow-md top-5 right-6'>
               <FaTimes />
             </div>
             
             <ul className='w-[80%] mt-4 flex flex-col'>
-                <a href="#home" className='w-full border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setIsOpen(false)}>Home</li>
+                <a href="#home" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Home</li>
                 </a>
-                <a href="#languages" className='w-full border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setIsOpen(false)}>Languages</li>
+                <a href="#languages" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Languages</li>
                 </a>
-                <a href="#product" className='w-full border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setIsOpen(false)}>Product</li>
+                <a href="#product" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Product</li>
                 </a>
-                <a href="#linkedin" className='w-full border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setIsOpen(false)}>Linkedin</li>
+                <a href="#linkedin" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Linkedin</li>
                 </a>
-                <a href="#github" className='w-full border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setIsOpen(false)}>Github</li>
+                <a href="#github" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Github</li>
                 </a>
-                <a href="#certification" className='w-full border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setIsOpen(false)}>Certification</li>
+                <a href="#certification" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Certification</li>
                 </a>
-                <a href="#experince" className='w-full border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setIsOpen(false)}>Pengalaman</li>
+                <a href="#experince" className='w-full mb-4 border-b border-b-slate-200'>
+                  <li className='py-4' onClick={() => setSidebar(false)}>Pengalaman</li>
                 </a>
             </ul>
           </div>
@@ -200,7 +206,7 @@ const Homepage: React.FC = () => {
                       <img src={Unipay} alt="unipay-project" className='rounded-md hover:grayscale-[100%] h-nax duration-300' />
                     </div>
                   </div>
-                  <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] p-4 lg:p-8 relative border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+                  <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] pb-6 px-4 pt-6 lg:p-8 relative border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                     <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                       <div className='w-full'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Swiftvel</h2>
@@ -312,7 +318,7 @@ const Homepage: React.FC = () => {
             <h2 className='text-[30px] text-white w-max hidden lg:flex items-center'>Short profile, Find out about <span className='text-blue-400 ml-3 flex items-center'>Me.</span></h2>
           </div>
           <img src={Square3} alt="3D" className='absolute opacity-[0.3] z-[1] top-[-150px] right-[-450px] scale-[0.5]' />
-          <div className='relative w-[90vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-9 lg:mt-8 rounded-[12px] border border-slate-200 h-[275px] lg:h-[500px]'>
+          <div className='relative w-[90vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mt-8 rounded-[12px] border border-slate-200 h-[275px] lg:h-[500px]'>
             <h3 className='text-slate-800 text-[13px] lg:text-[20px] w-[94%] lg:w-[90%] leading-loose'>Your LinkedIn profile section showcases your professional background, skills, education, and achievements, providing a comprehensive view of your career and allowing you to connect with other professionals in your field.</h3>
             <Link to={'https://www.linkedin.com/in/muhammad-khoirulhuda-223659207'}>
               <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-full mt-7 lg:mt-16 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-3'>
@@ -399,7 +405,7 @@ const Homepage: React.FC = () => {
 
         </div>
 
-        <div className='relative w-[90vw] flex flex-col z-[4444] pt-8 pb-5 lg:pb-36 lg:ml-[48px] h-max lg:border-l-[3px] border-white'>
+        <div className='relative w-[90vw] flex flex-col z-[4444] pt-7 lg:pt-8 pb-5 lg:pb-36 lg:ml-[48px] h-max lg:border-l-[3px] border-white'>
           
           <div id='asteroid1'></div>
           <div id='asteroid2'></div>
