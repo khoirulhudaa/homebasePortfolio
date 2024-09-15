@@ -312,7 +312,7 @@ const Homepage: React.FC = () => {
             <h2 className='text-[30px] text-white w-max hidden lg:flex items-center'>Short profile, Find out about <span className='text-blue-400 ml-3 flex items-center'>Me.</span></h2>
           </div>
           <img src={Square3} alt="3D" className='absolute opacity-[0.3] z-[1] top-[-150px] right-[-450px] scale-[0.5]' />
-          <div className='relative w-[90vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-12 lg:mt-8 rounded-[12px] border border-slate-200 h-[275px] lg:h-[500px]'>
+          <div className='relative w-[90vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-9 lg:mt-8 rounded-[12px] border border-slate-200 h-[275px] lg:h-[500px]'>
             <h3 className='text-slate-800 text-[13px] lg:text-[20px] w-[94%] lg:w-[90%] leading-loose'>Your LinkedIn profile section showcases your professional background, skills, education, and achievements, providing a comprehensive view of your career and allowing you to connect with other professionals in your field.</h3>
             <Link to={'https://www.linkedin.com/in/muhammad-khoirulhuda-223659207'}>
               <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-full mt-7 lg:mt-16 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-3'>
@@ -382,7 +382,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
 
-          <div id='github' className='relative lg:w-[92vw] text-left p-6 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mb-0 mb-14 rounded-[12px] border border-slate-200 h-[284px] lg:h-[500px]'>
+          <div id='github' className='relative lg:w-[92vw] text-left p-6 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mb-0 mb-14 rounded-[12px] border border-slate-200 min-h-[284px] lg:min-h-[500px]'>
             <h3 className='text-slate-800 text-[13px] lg:text-[20px] w-[94%] text-left lg:w-[90%] leading-loose'>Your GitHub profile highlights your coding projects, contributions to open-source communities, and technical skills, offering a comprehensive view of your expertise in software development and collaboration within the tech community.</h3>
             <div className='my-6 flex items-center lg:w-1/2'>
               <img src={Git2} alt="icon-from-git" className='absolute lg:w-[200px] w-[40%] lg:opacity-100 opacity-70 bottom-[-30px] lg:bottom-0 right-[-20px] lg:right-0 rotate-[-20deg] mr-0 lg:mr-10' title='Starstruck' />
@@ -519,7 +519,7 @@ const Homepage: React.FC = () => {
         <footer className='relative w-full text-white lg:pb-16 lg:px-16 lg:before:absolute lg:before:left-[22px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-purple-500 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full'>
           <div className='lg:ml-12'>
             <p className='w-[94%] text-[12px] lg:flex hidden lg:text-[16px] lg:w-[80%] leading-loose'>Website yang menjadi basecamp untuk semua karya dan pencapaian saya dalam dunia pemrogramman selama ini. Hasil kerja keras dan keyakinan untuk tetap berdedikasi dalam kompetensi tersebut.</p>
-            <p className='lg:rounded-full text-black lg:mt-8 text-[18px] px-4 py-3 lg:py-1 text-center bg-gradient-to-r from-white via-slate-400 to-white w-full lg:w-max'>2024 at the new portofolio</p>
+            <p className='lg:rounded-full text-black lg:mt-8 text-[16px] lg:text-[18px] px-4 py-3 lg:py-1 text-center bg-gradient-to-r from-white via-slate-400 to-white w-full lg:w-max'>2024 at the new portofolio</p>
           </div>
         </footer>
 
