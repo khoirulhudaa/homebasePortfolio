@@ -172,17 +172,17 @@ const Homepage: React.FC = () => {
                 <div className='w-full'>
                   <div className='w-full lg:flex items-center border-b pb-3 border-b-slate-300 justify-between mb-4'>
                     <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>SI GEO</h2>
-                    <div className='w-max text-[16px] flex items-center'>
-                      <div className='w-max text-slate-700 flex items-center mr-4'>
-                        <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                    <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                      <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                        <img src={Reacts} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                         <p>React</p>
                       </div>
-                      <div className='w-max text-slate-700 flex items-center mr-4'>
-                        <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                      <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                        <img src={Node} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                         <p>Node</p>
                       </div>
                       <div className='w-max text-slate-700 flex items-center'>
-                        <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                        <img src={Mongodb} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                         <p>MongoDB</p>
                       </div>
                     </div>
@@ -209,17 +209,17 @@ const Homepage: React.FC = () => {
                       <div className='w-full'>
                         <div className='w-full pb-3 lg:flex items-center justify-between border-b mb-4 border-b-slate-300'>
                           <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Unipay</h2>
-                          <div className='w-max text-[16px] flex items-center'>
-                          <div className='w-max text-slate-700 flex items-center mr-4'>
-                            <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                          <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                          <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                            <img src={Reacts} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                             <p>React</p>
                           </div>
-                          <div className='w-max text-slate-700 flex items-center mr-4'>
-                            <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                          <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                            <img src={Node} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                             <p>Node</p>
                           </div>
                           <div className='w-max text-slate-700 flex items-center'>
-                            <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                            <img src={Mongodb} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                             <p>MongoDB</p>
                           </div>
                         </div>
@@ -239,17 +239,17 @@ const Homepage: React.FC = () => {
                     <div className='w-full'>
                       <div className='w-full pb-3 lg:flex items-center justify-between border-b mb-4 border-b-slate-300'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Swiftvel</h2>
-                        <div className='w-max text-[16px] flex items-center'>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                        <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                           <p>React</p>
                         </div>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Node} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Node</p>
                         </div>
                         <div className='w-max text-slate-700 flex items-center'>
-                          <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                          <img src={Mongodb} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Mongodb</p>
                         </div>
                       </div>
@@ -271,13 +271,13 @@ const Homepage: React.FC = () => {
                     <div className='w-full'>
                       <div className='w-full pb-3 lg:flex items-center justify-between border-b mb-4 border-b-slate-300'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Valclass</h2>
-                        <div className='w-max text-[16px] flex items-center'>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={HTML} alt="react-icon" className='w-[26px] mr-3' />
+                        <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={HTML} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                           <p>HTML</p>
                         </div>
                         <div className='w-max text-slate-700 flex items-center'>
-                          <img src={JS} alt="react-icon" className='w-[24px] mr-3' />
+                          <img src={JS} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>JS</p>
                         </div>
                       </div>
@@ -297,17 +297,17 @@ const Homepage: React.FC = () => {
                     <div className='w-full'>
                       <div className='w-full pb-3 lg:flex items-center justify-between border-b mb-4 border-b-slate-300'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Flowtrush</h2>
-                        <div className='w-max text-[16px] flex items-center'>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                        <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                           <p>React</p>
                         </div>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Node} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Node</p>
                         </div>
                         <div className='w-max text-slate-700 flex items-center'>
-                          <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                          <img src={Mongodb} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Mongodb</p>
                         </div>
                       </div>
@@ -330,13 +330,13 @@ const Homepage: React.FC = () => {
                     <div className='w-full'>
                       <div className='w-full pb-3 lg:flex items-center justify-between border-b mb-4 border-b-slate-300'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>OMDB</h2>
-                        <div className='w-max text-[16px] flex items-center'>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                        <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                           <p>React</p>
                         </div>
                         <div className='w-max text-slate-700 flex items-center'>
-                          <img src={TW} alt="react-icon" className='w-[24px] mr-3' />
+                          <img src={TW} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Tailwind</p>
                         </div>
                       </div>
@@ -356,13 +356,13 @@ const Homepage: React.FC = () => {
                     <div className='w-full'>
                       <div className='w-full pb-3 lg:flex items-center justify-between border-b mb-4 border-b-slate-300'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>WeatherWeb</h2>
-                        <div className='w-max text-[16px] flex items-center'>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                        <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                           <p>React</p>
                         </div>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={TW} alt="react-icon" className='w-[24px] mr-3' />
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={TW} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Tailwind</p>
                         </div>
                       </div>
@@ -385,17 +385,17 @@ const Homepage: React.FC = () => {
                     <div className='w-full'>
                       <div className='w-full pb-3 lg:flex items-center justify-between border-b mb-4 border-b-slate-300'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Puitisy</h2>
-                        <div className='w-max text-[16px] flex items-center'>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                        <div className='w-max text-[14px] lg:text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[24px] lg:w-[26px] mr-2 lg:mr-3' />
                           <p>React</p>
                         </div>
-                        <div className='w-max text-slate-700 flex items-center mr-4'>
-                          <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                        <div className='w-max text-slate-700 flex items-center mr-3 lg:mr-4'>
+                          <img src={Node} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Node</p>
                         </div>
                         <div className='w-max text-slate-700 flex items-center'>
-                          <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                          <img src={Mongodb} alt="react-icon" className='w-[22px] lg:w-[24px] mr-2 lg:mr-3' />
                           <p>Mongodb</p>
                         </div>
                       </div>
@@ -431,8 +431,8 @@ const Homepage: React.FC = () => {
           </div>
           <img src={Square3} alt="3D" className='absolute opacity-[0.3] z-[1] top-[-150px] right-[-450px] scale-[0.5]' />
 
-          <div className='relative w-[90vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-10 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mt-8 rounded-[12px] border border-slate-200 h-max'>
-            <h3 className='text-slate-800 text-[13px] lg:text-[18px] lg:mb-4 w-[94%] lg:w-[90%] leading-loose'>Your LinkedIn profile section showcases your professional background, skills, education, and achievements, providing a comprehensive view of your career and allowing you to connect with other professionals in your field.</h3>
+          <div className='relative w-[100vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-10 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mt-8 lg:rounded-[12px] border border-slate-200 h-max'>
+            <h3 className='text-slate-800 text-[15px] lg:text-[18px] lg:mb-4 w-[94%] lg:w-[90%] leading-loose'>Your LinkedIn profile section showcases your professional background, skills, education, and achievements, providing a comprehensive view of your career and allowing you to connect with other professionals in your field.</h3>
             
             <div className='w-full border border-slate-300 rounded-lg p-4 bg-white mt-5'>
               <div className='w-full border-b border-b-slate-300 pb-3 mb-5'>
@@ -444,13 +444,13 @@ const Homepage: React.FC = () => {
                     <div className='w-[40px] h-[40px] lg:mb-0 mb-4 rounded-full overflow-hidden mr-3'>
                       <img src={PakYos} alt="foto" />
                     </div>
-                    <p>Pak. Yoshua Gombo - <span className='text-slate-400 text-[14px] ml-3'>Co-Founder at Konstruksi.AI | Robotics & AI</span></p>
+                    <p>Pak. Yoshua Gombo - <br className='flex lg:hidden' /> <span className='text-slate-400 text-[12px] lg:text-[14px]'>Co-Founder at Konstruksi.AI | Robotics & AI</span></p>
                   </div>
                   <p className='bg-blue-500 text-white text-[14px] rounded-md px-3 w-max lg:mt-0 mt-4 py-[6px]'>Konstruksi.AI</p>
                 </div>
               </Link>
 
-              <p className='w-full mt-3 leading-loose text-slate-500 text-[15px]'>
+              <p className='w-full mt-3 leading-loose text-slate-500 text-[14px] lg:text-[15px]'>
               To whom it may concern:
 
               Huda worked with us at Konstruksi.AI developing the core main product as a Frontend developer. Although he was an intern, Huda contributed greatly to the team. Huda has an excellent skill related to Frontend development and always completed his tasks in timely manner. He can perform both individually and within a team as well. I recommend him as a Frontend developer and I believe he will be a great asset to any company.
@@ -466,7 +466,7 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
-        <div className='relative w-full lg:mt-0 mt-[50px] flex flex-col z-[4444] lg:px-0 px-6 lg:ml-[48px] h-max lg:border-l-[3px] border-white'>
+      <div className='relative w-full lg:mt-0 mt-[50px] flex flex-col z-[4444] lg:px-0 border-box lg:ml-[48px] h-max lg:border-l-[3px] border-white'>
           
           <div id='asteroid1b'></div>
           <div id='asteroid2b'></div>
@@ -484,7 +484,7 @@ const Homepage: React.FC = () => {
 
           <img src={Earth} alt="earth" className='absolute right-[-700px] opacity-[0.2] top-[-200px]' />
 
-          <div className='relative z-[4444] pb-[0px] px-0 lg:px-16 w-[100%] mt-[0px] lg:mt-20 lg:mb-20 h-max ml-[0px]'>
+          <div className='relative z-[4444] pb-[0px] px-4 lg:px-16 w-[100%] mt-[0px] lg:mt-20 lg:mb-20 h-max ml-[0px]'>
             <div className='w-max mb-3 border border-white rounded-full text-white flex lg:ml-0 items-center text-center px-5 py-1'>
               Experiences
             </div>
@@ -493,7 +493,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* one */}
-          <div id='experience' className='relative flex items-center h-max lg:mt-0 mt-[0px] lg:h-[400px] w-full'>
+          <div id='experience' className='relative flex lg:px-0 px-4 items-center h-max lg:h-[400px] lg:mt-0 mt-10 lg:pt-0 pt-4 border-y border-y-white w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -509,7 +509,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/* two */}
-          <div className='relative flex items-center h-max px-0 lg:h-[400px] w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-4 lg:h-[400px] lg:pt-0 pt-4 w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -525,10 +525,10 @@ const Homepage: React.FC = () => {
             </div>
           </div>
 
-          <div id='github' className='relative lg:w-[92vw] text-left p-4 lg:p-10 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mb-0 mb-14 rounded-[12px] border border-slate-200 min-h-[284px] lg:min-h-[500px]'>
-            <h3 className='text-slate-800 text-[13px] lg:text-[18px] w-[94%] text-left lg:w-[90%] leading-loose'>Your GitHub profile highlights your coding projects, contributions to open-source communities, and technical skills, offering a comprehensive view of your expertise in software development and collaboration within the tech community.</h3>
+          <div id='github' className='relative w-[100vw] lg:w-[92vw] text-left p-4 lg:p-10 z-40 relative overflow-hidden left-0 lg:left-[-35px] flex flex-col bg-white mt-8 lg:mb-0 mb-14 lg:rounded-[12px] border border-slate-200 min-h-[284px] lg:min-h-[500px]'>
+            <h3 className='text-slate-800 text-[15px] lg:text-[18px] w-[94%] text-left lg:w-[90%] leading-loose'>Your GitHub profile highlights your coding projects, contributions to open-source communities, and technical skills, offering a comprehensive view of your expertise in software development and collaboration within the tech community.</h3>
             
-            <div className='w-full my-8 lg:flex justify-between items-centr'>
+            <div className='w-full my-8 lg:flex justify-between items-center'>
               <div className='w-full lg:mb-0 mb-5 lg:w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
                 <div className='w-full h-[130px] bg-blue-200 flex justify-center items-center'>
                   <img src={Git1} alt="pull-shark" className='w-[30%]' />
@@ -606,7 +606,7 @@ const Homepage: React.FC = () => {
 
           <img src={Earth} alt="earth" className='absolute right-[-700px] scale-[2] opacity-[0.2] top-[25%]' />
 
-          <div className='relative z-[4444] pb-[0px] px-0 lg:px-16 w-[100%] mt-[0px] lg:mt-20 lg:mb-20 h-max ml-[22px] lg:ml-[0px]'>
+          <div className='relative z-[4444] pb-[0px] px-0 lg:px-16 w-[100%] mt-[0px] lg:mt-20 lg:mb-20 h-max ml-[16px] lg:ml-[0px]'>
             <div className='w-max mb-3 border border-white rounded-full text-white flex lg:ml-0 items-center text-center px-5 py-1'>
               Certificates
             </div>
@@ -615,7 +615,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* one */}
-          <div id='certification' className='relative flex items-center lg:px-0 px-6 h-max lg:h-[400px] w-full'>
+          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 pt-4 lg:mt-0 mt-10 border-y border-y-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -636,7 +636,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/* two */}
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 border-b border-b-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -657,7 +657,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
 
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 border-b border-b-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -678,7 +678,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
          
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 border-b border-b-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -698,7 +698,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
          
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
