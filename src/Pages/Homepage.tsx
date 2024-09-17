@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaArrowRight, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { Bali, Cirebon, Earth, FlowTrush, Geospasial, Git1, Git2, Git3, Git4, JS, JWD, Jakarta, Linkedin, Majalengka, Node, OMDB, Reacts, Redux, Square, Square3, SquareLine, Swiftvel, TS, TW, ThreeD, Unipay, Valclass, Weather } from '../Assets'
+import { Bali, Cirebon, Earth, Mongodb, FlowTrush, Geospasial, Git1, Git2, Git3, Git4, JS, JWD, Jakarta, Linkedin, Majalengka, Node, OMDB, Reacts, Redux, Square, Square3, SquareLine, Swiftvel, TS, TW, ThreeD, Unipay, Valclass, Weather, HTML, PakYos, Winner, Peserta } from '../Assets'
 import ModalCertification from '../Components/ModalCertification'
 import '../index.css'
 
@@ -165,14 +165,29 @@ const Homepage: React.FC = () => {
                 <h3 className='text-[30px] lg:text-[32px] ml-5 text-white font-bold'>Portfolio</h3>
               </div>
               <h3 className='text-[40px] lg:flex hidden lg:text-[70px] text-white lg:text-blue-500 font-[500]'>Product me</h3>
-              {/* <h2 className='text-[20px] lg:text-[40px] lg:ml-0 ml-3 bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-400 to-white'>Accelerate innovation</h2> */}
               <h2 className='text-[22px] text-white w-max hidden lg:flex items-center'>District level regional <span className='text-blue-500 ml-3 flex items-center'>innovation competition.</span></h2>
             </div>
-            <div className='w-[92vw] z-40 flex flex-col relative pb-6 pt-6 px-4 lg:p-4 lg:mt-10 mt-[30px] lg:p-10 lg:left-[-70px] bg-white mt-[120px] rounded-[12px] border border-slate-200 h-max'>
+            <div className='w-[92vw] z-40 flex flex-col relative pb-6 pt-6 px-4 lg:px-8 lg:pt-4 lg:pb-6 lg:mt-10 mt-[30px] lg:p-10 lg:left-[-70px] bg-white mt-[120px] rounded-[12px] border border-slate-200 h-max'>
               <div className='w-full h-full relative flex-col lg:flex justify-between text-[20px] leading-loose text-white'>
-                <div className='w-full lg:w-[60%]'>
+                <div className='w-full'>
+                  <div className='w-full flex items-center border-b pb-3 border-b-slate-300 justify-between mb-4'>
                     <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>SI GEO</h2>
-                    <h3 className='lg:text-[16px] text-[13px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
+                    <div className='w-max text-[16px] flex items-center'>
+                      <div className='w-max text-slate-700 flex items-center mr-4'>
+                        <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                        <p>React</p>
+                      </div>
+                      <div className='w-max text-slate-700 flex items-center mr-4'>
+                        <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                        <p>Node</p>
+                      </div>
+                      <div className='w-max text-slate-700 flex items-center'>
+                        <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                        <p>MongoDB</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className='lg:text-[16px] lg:w-[90%] text-[13px] text-slate-600'>Sigeo is an abbreviation for Geographic Information System (GIS), a technology used to gather, store, manipulate, analyze, and visualize location-based or geographic data in Cirebon Regency.</h3>
                 </div>
                 <Link to={'https://sigeo-admin.vercel.app/'}>
                   <h3 className='cursor-pointer hover:brightness-[90%] relative lg:top-[-6px] active:scale-[0.99] text-[15px] text-[14px] lg:mt-5 mt-3 text-blue-700 flex border border-blue-700 rounded-full lg:my-10 w-max py-2 px-3 items-center'>SI GEO in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
@@ -189,11 +204,27 @@ const Homepage: React.FC = () => {
               <h3 className='text-[30px] lg:text-[50px] text-white lg:text-blue-500 font-[500]'>Our Products</h3>
               <h2 className='text-[14px] lg:text-[24px] text-white flex w-max items-center'>District level regional <span className='text-blue-300 ml-3 flex items-center'>innovation competition.</span></h2>
               <div className='w-[90vw] lg:flex flex-col lg:flex-row lg:flex-row z-40 flex relative left-[0px] mt-[40px] lg:mt-[60px] h-max'>
-                  <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+                  <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:px-8 lg:pb-8 lg:pt-4 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                     <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                       <div className='w-full'>
-                        <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Unipay</h2>
-                        <h3 className='text-[13px] lg:text-[17px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
+                        <div className='w-full pb-3 flex items-center justify-between border-b mb-4 border-b-slate-300'>
+                          <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Unipay</h2>
+                          <div className='w-max text-[16px] flex items-center'>
+                          <div className='w-max text-slate-700 flex items-center mr-4'>
+                            <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                            <p>React</p>
+                          </div>
+                          <div className='w-max text-slate-700 flex items-center mr-4'>
+                            <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                            <p>Node</p>
+                          </div>
+                          <div className='w-max text-slate-700 flex items-center'>
+                            <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                            <p>MongoDB</p>
+                          </div>
+                        </div>
+                        </div>
+                        <h3 className='text-[13px] lg:text-[16px] text-slate-600'>Unipay facilitates students and faculty members to digitally process ordering and payment of fees.</h3>
                       </div>
                       <Link to={'https://unipay-ikmi.vercel.app/auth'}>
                         <h3 className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-blue-700 relative top-[-6px] flex items-center lg:text-[15px] text-[14px]'>Unipay in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
@@ -203,11 +234,27 @@ const Homepage: React.FC = () => {
                       <img src={Unipay} alt="unipay-project" className='rounded-md hover:grayscale-[100%] h-nax duration-300' />
                     </div>
                   </div>
-                  <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] pb-6 px-4 pt-6 lg:p-8 relative border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
-                    <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
-                      <div className='w-full'>
+                  <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:px-8 lg:pb-8 lg:pt-4 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+                  <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
+                    <div className='w-full'>
+                      <div className='w-full pb-3 flex items-center justify-between border-b mb-4 border-b-slate-300'>
                         <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Swiftvel</h2>
-                        <h3 className='text-[13px] lg:text-[17px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
+                        <div className='w-max text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                          <p>React</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Node</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center'>
+                          <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Mongodb</p>
+                        </div>
+                      </div>
+                      </div>
+                        <h3 className='text-[13px] lg:text-[16px] text-slate-600'>Swiftvel is a platform for building websites by easily assembling various components (click and add).</h3>
                       </div>
                       <h3 className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-blue-700 relative top-[-6px] flex items-center lg:text-[15px] text-[14px]'>Swiftvel in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
                     </div>
@@ -219,11 +266,23 @@ const Homepage: React.FC = () => {
             </div>
 
             <div className='w-[90vw] lg:flex flex-col lg:flex-row z-40 flex relative left-[0px] mt-[0px] lg:mt-14 h-max'>
-                <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+              <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:px-8 lg:pb-8 lg:pt-4 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                   <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
-                      <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Framework CSS</h2>
-                      <h3 className='text-[13px] lg:text-[17px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
+                      <div className='w-full pb-3 flex items-center justify-between border-b mb-4 border-b-slate-300'>
+                        <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Valclass</h2>
+                        <div className='w-max text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={HTML} alt="react-icon" className='w-[26px] mr-3' />
+                          <p>HTML</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center'>
+                          <img src={JS} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>JS</p>
+                        </div>
+                      </div>
+                      </div>
+                      <h3 className='text-[13px] lg:text-[16px] text-slate-600'>Valclass is a CSS framework that operates similar to Tailwind CSS and also provides ready-to-use components.</h3>
                     </div>
                     <Link to={'https://valclassui-v1.vercel.app/'}>
                       <h3 className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-blue-700 relative top-[-6px] flex items-center lg:text-[15px] text-[14px]'>Valclass in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
@@ -233,11 +292,27 @@ const Homepage: React.FC = () => {
                     <img src={Valclass} alt="valclass-project" className='rounded-md hover:grayscale-[100%] h-nax duration-300' />
                   </div>
                 </div>
-                <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] relative pb-6 px-4 pt-6 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+                <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:px-8 lg:pb-8 lg:pt-4 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                   <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
-                      <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>FlowTrush</h2>
-                      <h3 className='text-[13px] lg:text-[17px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
+                      <div className='w-full pb-3 flex items-center justify-between border-b mb-4 border-b-slate-300'>
+                        <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Flowtrush</h2>
+                        <div className='w-max text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                          <p>React</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Node</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center'>
+                          <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Mongodb</p>
+                        </div>
+                      </div>
+                      </div>
+                      <h3 className='text-[13px] lg:text-[16px] text-slate-600'>Flowtrush is created similar to Trello, to manage and organize task lists in a structured manner.</h3>
                     </div>
                     <Link to={'https://flowtrush.vercel.app/auth'}>
                       <h3 className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-blue-700 relative top-[-6px] flex items-center lg:text-[15px] text-[14px]'>FlowTrush in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
@@ -250,11 +325,23 @@ const Homepage: React.FC = () => {
             </div>
 
             <div className='w-[90vw] lg:flex flex-col lg:flex-row z-40 flex relative left-[0px] mt-0 lg:mt-14 h-max'>
-                <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+              <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:px-8 lg:pb-8 lg:pt-4 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                   <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
-                      <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>OMDB API</h2>
-                      <h3 className='text-[13px] lg:text-[17px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
+                      <div className='w-full pb-3 flex items-center justify-between border-b mb-4 border-b-slate-300'>
+                        <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>OMDB</h2>
+                        <div className='w-max text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                          <p>React</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center'>
+                          <img src={TW} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Tailwind</p>
+                        </div>
+                      </div>
+                      </div>
+                      <h3 className='text-[13px] lg:text-[16px] text-slate-600'>OMDB is a platform to obtain a list of movies, built using React and utilizing the OMDB API.</h3>
                     </div>
                     <Link to={'https://omdb-api-vite.vercel.app/'}>
                       <h3 className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-blue-700 relative top-[-6px] flex items-center lg:text-[15px] text-[14px]'>Valclass in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
@@ -264,11 +351,23 @@ const Homepage: React.FC = () => {
                     <img src={OMDB} alt="OMDB-project" className='rounded-md hover:grayscale-[100%] h-nax duration-300' />
                   </div>
                 </div>
-                <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] relat8ve left-[0px] pb-6 px-4 pt-6 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+                <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:px-8 lg:pb-8 lg:pt-4 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                   <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
-                      <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>WeatherWeb</h2>
-                      <h3 className='text-[13px] lg:text-[17px] text-slate-600'>GitHub Actions au tomates your build, test, and deployment workflow with simple and secure CI/CD.</h3>
+                      <div className='w-full pb-3 flex items-center justify-between border-b mb-4 border-b-slate-300'>
+                        <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>WeatherWeb</h2>
+                        <div className='w-max text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                          <p>React</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={TW} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Tailwind</p>
+                        </div>
+                      </div>
+                      </div>
+                      <h3 className='text-[13px] lg:text-[16px] text-slate-600'>WeatherWeb is a platform for checking weather conditions in a city, leveraging the API from openweathermap.</h3>
                     </div>
                     <Link to={'https://weather-iota-gilt.vercel.app/'}>
                       <h3 className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-blue-700 relative top-[-6px] flex items-center lg:text-[15px] text-[14px]'>WeatherWeb in here<FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
@@ -281,11 +380,27 @@ const Homepage: React.FC = () => {
             </div>
 
             <div className='w-[90vw] lg:flex flex-col lg:flex-row z-40 flex relative left-[0px] mt-0 lg:mt-14 h-max'>
-                <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:p-8 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
+              <div className='w-full lg:w-[45%] bg-white lg:mb-0 mb-8 h-[max] mr-8 pb-6 px-4 pt-6 lg:px-8 lg:pb-8 lg:pt-4 border border-slate-700 rounded-[14px] lg:rounded-[20px]'>
                   <div className='w-full h-max relative flex flex-col justify-between text-[20px] leading-loose text-white'>
                     <div className='w-full'>
-                      <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Puitisy</h2>
-                      <h3 className='text-[13px] lg:text-[17px] text-slate-600'>– A digital space where words and poetic art unite, offering a platform for writers and readers to connect.</h3>
+                      <div className='w-full pb-3 flex items-center justify-between border-b mb-4 border-b-slate-300'>
+                        <h2 className='text-slate-800 font-bold text-[26px] lg:text-[28px]'>Puitisy</h2>
+                        <div className='w-max text-[16px] flex items-center'>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Reacts} alt="react-icon" className='w-[26px] mr-3' />
+                          <p>React</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center mr-4'>
+                          <img src={Node} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Node</p>
+                        </div>
+                        <div className='w-max text-slate-700 flex items-center'>
+                          <img src={Mongodb} alt="react-icon" className='w-[24px] mr-3' />
+                          <p>Mongodb</p>
+                        </div>
+                      </div>
+                      </div>
+                      <h3 className='text-[13px] lg:text-[16px] text-slate-600'>– A digital space where words and poetic art unite, offering a platform for writers and readers to connect.</h3>
                     </div>
                     <Link to={'https://puitisy.vercel.app/'}>
                       <h3 className='cursor-pointer mt-6 hover:brightness-[90%] active:scale-[0.99] text-blue-700 relative top-[-6px] flex items-center lg:text-[15px] text-[14px]'>Puitisy in here <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
@@ -315,14 +430,39 @@ const Homepage: React.FC = () => {
             <h2 className='text-[30px] text-white w-max hidden lg:flex items-center'>Short profile, Find out about <span className='text-blue-400 ml-3 flex items-center'>Me.</span></h2>
           </div>
           <img src={Square3} alt="3D" className='absolute opacity-[0.3] z-[1] top-[-150px] right-[-450px] scale-[0.5]' />
-          <div className='relative w-[90vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mt-8 rounded-[12px] border border-slate-200 h-[275px] lg:h-[500px]'>
-            <h3 className='text-slate-800 text-[13px] lg:text-[20px] w-[94%] lg:w-[90%] leading-loose'>Your LinkedIn profile section showcases your professional background, skills, education, and achievements, providing a comprehensive view of your career and allowing you to connect with other professionals in your field.</h3>
+
+          <div className='relative w-[90vw] lg:w-[92vw] mx-auto lg:mx-0 text-left p-4 lg:p-10 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mt-8 rounded-[12px] border border-slate-200 h-[275px] lg:h-max'>
+            <h3 className='text-slate-800 text-[13px] lg:text-[18px] lg:mb-4 w-[94%] lg:w-[90%] leading-loose'>Your LinkedIn profile section showcases your professional background, skills, education, and achievements, providing a comprehensive view of your career and allowing you to connect with other professionals in your field.</h3>
+            
+            <div className='w-full border border-slate-300 rounded-lg p-4 bg-white mt-5'>
+              <div className='w-full border-b border-b-slate-300 pb-3 mb-5'>
+                <h2>Recomendation</h2>
+              </div>
+              <Link to={'https://www.linkedin.com/in/yoshua-gombo/'}>
+                <div className='w-full flex items-center justify-between mb-4'>
+                  <div className='flex items-center'>
+                    <div className='w-[40px] h-[40px] rounded-full overflow-hidden mr-3'>
+                      <img src={PakYos} alt="foto" />
+                    </div>
+                  <p>Pak. Yoshua Gombo - <span className='text-slate-400 text-[14px] ml-3'>Co-Founder at Konstruksi.AI | Robotics & AI</span></p>
+                  </div>
+                  <p className='bg-blue-500 text-white text-[14px] rounded-md px-3 py-[6px]'>Konstruksi.AI</p>
+                </div>
+              </Link>
+
+              <p className='w-full mt-3 leading-loose text-slate-500 text-[15px]'>
+              To whom it may concern:
+
+              Huda worked with us at Konstruksi.AI developing the core main product as a Frontend developer. Although he was an intern, Huda contributed greatly to the team. Huda has an excellent skill related to Frontend development and always completed his tasks in timely manner. He can perform both individually and within a team as well. I recommend him as a Frontend developer and I believe he will be a great asset to any company.
+              </p>
+            </div>
+            
             <Link to={'https://www.linkedin.com/in/muhammad-khoirulhuda-223659207'}>
               <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-full mt-7 lg:mt-16 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-3'>
                 Look at linkedin <FaArrowRight className='ml-3' />
               </div>
             </Link>
-            <img src={Linkedin} alt="linkedin" className='absolute right-3 bottom-3 w-[20%]' />
+            <img src={Linkedin} alt="linkedin" className='absolute right-10 bottom-9 w-[6%]' />
           </div>
         </div>
 
@@ -385,14 +525,60 @@ const Homepage: React.FC = () => {
             </div>
           </div>
 
-          <div id='github' className='relative lg:w-[92vw] text-left p-6 lg:p-16 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mb-0 mb-14 rounded-[12px] border border-slate-200 min-h-[284px] lg:min-h-[500px]'>
-            <h3 className='text-slate-800 text-[13px] lg:text-[20px] w-[94%] text-left lg:w-[90%] leading-loose'>Your GitHub profile highlights your coding projects, contributions to open-source communities, and technical skills, offering a comprehensive view of your expertise in software development and collaboration within the tech community.</h3>
-            <div className='my-6 flex items-center lg:w-1/2'>
-              <img src={Git2} alt="icon-from-git" className='absolute lg:w-[200px] w-[40%] lg:opacity-100 opacity-70 bottom-[-30px] lg:bottom-0 right-[-20px] lg:right-0 rotate-[-20deg] mr-0 lg:mr-10' title='Starstruck' />
-              <img src={Git4} alt="icon-from-git" className='absolute lg:w-[250px] w-[45%] lg:flex hidden lg:opacity-100 opacity-70 bottom-[12px] lg:bottom-5 lg:right-[12%] scale-[0.9] rotate-[-20deg] mr-10' title='Pull SHark' />
-              <img src={Git1} alt="icon-from-git" className='absolute lg:w-[200px] w-[45%] lg:flex hidden lg:opacity-100 opacity-70 bottom-[-16%] right-[30%] rotate-[-20deg] mr-10' title='Quickdraw' />
-              <img src={Git3} alt="icon-from-git" className='absolute lg:w-[200px] w-[45%] lg:flex hidden lg:opacity-100 opacity-70 bottom-[90px] lg:top-[80%] right-[20%] rotate-[-20deg]' title='Yolo' />
+          <div id='github' className='relative lg:w-[92vw] text-left p-6 lg:p-10 z-40 relative overflow-hidden lg:left-[-35px] flex flex-col bg-white mt-8 lg:mb-0 mb-14 rounded-[12px] border border-slate-200 min-h-[284px] lg:min-h-[500px]'>
+            <h3 className='text-slate-800 text-[13px] lg:text-[18px] w-[94%] text-left lg:w-[90%] leading-loose'>Your GitHub profile highlights your coding projects, contributions to open-source communities, and technical skills, offering a comprehensive view of your expertise in software development and collaboration within the tech community.</h3>
+            
+            <div className='w-full my-8 flex justify-between items-centr'>
+              <div className='w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+                <div className='w-full h-[130px] bg-blue-200 flex justify-center items-center'>
+                  <img src={Git1} alt="pull-shark" className='w-[30%]' />
+                </div>
+                <div className='w-full p-4'>
+                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                  </div>
+                  <h2>Pull Shark - 2x</h2>
+                  <p className='mt-2 text-slate-500 text-[14px] leading-loose'>@khoirulhudaa opened pull requests that have been merged.</p>
+                </div>
+              </div>
+              <div className='w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+                <div className='w-full h-[130px] bg-orange-200 flex justify-center items-center'>
+                  <img src={Git2} alt="pull-shark" className='w-[30%]' />
+                </div>
+                <div className='w-full p-4'>
+                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                  </div>
+                  <h2>Quickdraw</h2>
+                  <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Closing issues or pull requests within 5 minutes after they are opened.</p>
+                </div>
+              </div>
+              <div className='w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+                <div className='w-full h-[130px] bg-yellow-200 flex justify-center items-center'>
+                  <img src={Git3} alt="pull-shark" className='w-[30%]' />
+                </div>
+                <div className='w-full p-4'>
+                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                  </div>
+                  <h2>Yolo</h2>
+                  <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Achievement when you merge a PR without review.</p>
+                </div>
+              </div>
+              <div className='w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+                <div className='w-full h-[130px] bg-purple-300 flex justify-center items-center'>
+                  <img src={Git4} alt="pull-shark" className='w-[30%]' />
+                </div>
+                <div className='w-full p-4'>
+                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                  </div>
+                  <h2>Starstruck</h2>
+                  <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Starstruck: Having a repository with high popularity / a large number of stars.</p>
+                </div>
+              </div>
             </div>
+
             <Link to={'https://github.com/khoirulhudaa'}>
               <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98] rounded-full mt-[-22px] lg:mt-5 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:text-[16px] text-[12px] lg:px-8 py-3'>
                 Look at github <FaArrowRight className='ml-3' />
@@ -434,8 +620,11 @@ const Homepage: React.FC = () => {
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
             <div className='w-full relative left-[-1px] lg:left-[-100px] mt-8'>
-              <div className='lg:ml-[120px] mt-[0px] w-max mb-5 border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
-                Web Dev - Undergraduate
+              <div className='lg:ml-[120px] mt-[0px] mb-5 flex items-center'>
+                <img src={Winner} alt="winner-icon" className='w-[30px]' />
+                <div className='ml-5 mt-[0px] w-max border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
+                  Web Development - Untar
+                </div>
               </div>
               <h2 className='text-[24px] lg:text-[60px] lg:ml-[110px] relative top-[5px] bg-gradient-to-r from-white to-slate-500 text-transparent w-[94vw] lg:w-[70vw] text-left bg-clip-text'>2nd Place - National</h2>
               <p className='lg:text-white lg:ml-[110px] mt-5 w-full lg:text-[16px] text-[14px] text-slate-300 text-left lg:w-[75%] leading-loose'>National-level team-based Web Development Competition with a maximum of three members per team in the I/O Festival 2024 at Tarumanegara University, Jakarta.</p>
@@ -452,8 +641,11 @@ const Homepage: React.FC = () => {
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
             <div className='w-full relative left-[-1px] lg:left-[-100px] mt-8'>
-              <div className='lg:ml-[120px] mt-[0px] w-max mb-5 border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
-                WDC - General
+            <div className='lg:ml-[120px] mt-[0px] mb-5 flex items-center'>
+                <img src={Winner} alt="winner-icon" className='w-[30px]' />
+                <div className='ml-5 mt-[0px] w-max border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
+                  WDC - Majalengka University
+                </div>
               </div>
               <h2 className='text-[24px] lg:text-[60px] lg:ml-[110px] relative top-[5px] bg-gradient-to-r from-white to-slate-500 text-transparent w-[94vw] lg:w-[70vw] text-left bg-clip-text'>2nd Place - Public</h2>
               <p className='lg:text-white lg:ml-[110px] mt-5 w-full lg:text-[16px] text-[14px] text-slate-300 text-left lg:w-[75%] leading-loose'>National-level Web Design Competition for Students at the Dies Natalis HMIF event at Majalengka University, Majalengka on May 20, 2024.</p>
@@ -470,8 +662,11 @@ const Homepage: React.FC = () => {
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
             <div className='w-full relative left-[-1px] lg:left-[-100px] mt-8'>
-              <div className='lg:ml-[120px] mt-[0px] w-max mb-5 border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
-                WDC - Local
+              <div className='lg:ml-[120px] mt-[0px] mb-5 flex items-center'>
+                <img src={Winner} alt="winner-icon" className='w-[30px]' />
+                <div className='ml-5 mt-[0px] w-max border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
+                  WDC - STMIK IKMI Cirebon
+                </div>
               </div>
               <h2 className='text-[24px] lg:text-[60px] lg:ml-[110px] relative top-[5px] bg-gradient-to-r from-white to-slate-500 text-transparent w-[94vw] lg:w-[70vw] text-left bg-clip-text'>1st Place - Intramural </h2>
               <p className='lg:text-white lg:ml-[110px] mt-5 w-full lg:text-[16px] text-[14px] text-slate-300 text-left lg:w-[75%] leading-loose'>Inter-College Landing Page Web Competition exclusively for STMIK IKMI CIREBON students at the IKMIMATCHCHAMPIONSHIP event from August 18 to 26, 2023.</p>
@@ -488,8 +683,11 @@ const Homepage: React.FC = () => {
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
             <div className='w-full relative left-[-1px] lg:left-[-100px] mt-8'>
-              <div className='lg:ml-[120px] mt-[0px] w-max mb-5 border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
-                WDC - Politeknik Negeri Bali
+              <div className='lg:ml-[120px] mt-[0px] mb-5 flex items-center'>
+                <img src={Peserta} alt="winner-icon" className='w-[30px]' />
+                <div className='ml-5 mt-[0px] w-max border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
+                  WDC - Politeknik Negeri Bali
+                </div>
               </div>
               <h2 className='text-[24px] lg:text-[60px] lg:ml-[110px] relative top-[5px] bg-gradient-to-r from-white to-slate-500 text-transparent w-[94vw] lg:w-[70vw] text-left bg-clip-text'>Participation </h2>
               <p className='lg:text-white lg:ml-[110px] mt-5 w-full lg:text-[16px] text-[14px] text-slate-300 text-left lg:w-[75%] leading-loose'>National-level Web Design Competition for High School Students (SMA/SMK) at INTECHFEST 2020 with the theme "Information and Technology can Support Future Life".</p>
@@ -505,8 +703,11 @@ const Homepage: React.FC = () => {
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
             <div className='w-full relative left-[-1px] lg:left-[-100px] mt-8'>
-              <div className='lg:ml-[120px] mt-[                0px] w-max mb-5 border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
-                VSGA - BNSP
+              <div className='lg:ml-[120px] mt-[0px] mb-5 flex items-center'>
+                <img src={Peserta} alt="winner-icon" className='w-[30px]' />
+                <div className='ml-5 mt-[0px] w-max border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
+                  Training Junior Web Dev
+                </div>
               </div>
               <h2 className='text-[24px] lg:text-[60px] lg:ml-[110px] relative top-[5px] bg-gradient-to-r from-white to-slate-500 text-transparent w-[94vw] lg:w-[70vw] text-left bg-clip-text'>VSGA - JWD</h2>
               <p className='lg:text-white lg:ml-[110px] mt-5 w-full lg:text-[16px] text-[14px] text-slate-300 text-left lg:w-[75%] leading-loose'>It's a certification training program for Junior Web Developers based on national competencies and one of the eight academies under the Digital Talent Scholarship (DTS) in 2022.</p>

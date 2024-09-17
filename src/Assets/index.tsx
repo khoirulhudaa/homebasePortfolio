@@ -37,17 +37,27 @@ import Cirebon from './Juara1IKMIMATCHCAMPHIONS.jpg'
 import Majalengka from './Juara2DiesNatalies.jpg'
 import Jakarta from './Juara2 I_O.jpg'
 import Bali from './pnb2020.jpg'
+import Mongodb from './mongodb.png'
 import JWD from './JWD.jpg'
+import PakYos from './pakyos.jpeg'
 import Linkedin from './linkedin.png'
+import ExternalLink from './sharee.png'
+import Winner from './streak.png'
+import Peserta from './winner.png'
 
 export {
     Linkedin,
     ThreeD,
     Cirebon,
     Majalengka,
+    Winner,
+    Peserta,
     Jakarta,
     Bali,
+    ExternalLink,
+    PakYos,
     HTML,
+    Mongodb,
     CSS,
     Reacts,
     Node,
