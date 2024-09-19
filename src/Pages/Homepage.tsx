@@ -439,7 +439,7 @@ const Homepage: React.FC = () => {
                 <h2>Recomendation</h2>
               </div>
               <Link to={'https://www.linkedin.com/in/yoshua-gombo/'}>
-                <div className='w-full ;g:flex items-center justify-between mb-4'>
+                <div className='w-full lg:flex items-center justify-between mb-4 lg:mb-8'>
                   <div className='lg:flex items-center'>
                     <div className='w-[40px] h-[40px] lg:mb-0 mb-4 rounded-full overflow-hidden mr-3'>
                       <img src={PakYos} alt="foto" />
@@ -458,11 +458,11 @@ const Homepage: React.FC = () => {
             </div>
             
             <Link to={'https://www.linkedin.com/in/muhammad-khoirulhuda-223659207'}>
-              <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-full mt-7 lg:mt-16 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-3'>
+              <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-md lg:rounded-full mt-7 lg:mt-16 bg-slate-700 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
                 Look at linkedin <FaArrowRight className='ml-3' />
               </div>
             </Link>
-            <img src={Linkedin} alt="linkedin" className='absolute right-4 lg:right-10 bottom-4 lg:bottom-9 w-[6%]' />
+            <img src={Linkedin} alt="linkedin" className='absolute right-4 lg:right-10 bottom-4 lg:flex hidden lg:bottom-9 w-[6%]' />
           </div>
         </div>
 
@@ -493,7 +493,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* one */}
-          <div id='experience' className='relative flex lg:px-0 px-4 items-center h-max lg:h-[400px] lg:mt-0 mt-10 lg:pt-0 pt-4 border-y border-y-white w-full'>
+          <div id='experience' className='relative flex lg:px-0 px-4 items-center h-max lg:h-[400px] lg:mt-0 lg:pt-0 pt-4 lg:border-0 border-b border-b-white w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -529,7 +529,7 @@ const Homepage: React.FC = () => {
             <h3 className='text-slate-800 text-[15px] lg:text-[18px] w-[94%] text-left lg:w-[90%] leading-loose'>Your GitHub profile highlights your coding projects, contributions to open-source communities, and technical skills, offering a comprehensive view of your expertise in software development and collaboration within the tech community.</h3>
             
             <div className='w-full my-8 lg:flex justify-between items-center'>
-              <div className='w-full lg:mb-0 mb-5 lg:w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+              <div className='w-full lg:mb-0 mb-8 lg:w-[24%] h-[335px] p-3 border border-slate-300 rounded-lg'>
                 <div className='w-full h-[130px] bg-blue-200 flex justify-center items-center'>
                   <img src={Git1} alt="pull-shark" className='w-[30%]' />
                 </div>
@@ -541,7 +541,7 @@ const Homepage: React.FC = () => {
                   <p className='mt-2 text-slate-500 text-[14px] leading-loose'>@khoirulhudaa opened pull requests that have been merged.</p>
                 </div>
               </div>
-              <div className='w-full lg:mb-0 mb-5 lg:w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+              <div className='w-full lg:mb-0 mb-8 lg:w-[24%] h-[335px] p-3 border border-slate-300 rounded-lg'>
                 <div className='w-full h-[130px] bg-orange-200 flex justify-center items-center'>
                   <img src={Git2} alt="pull-shark" className='w-[30%]' />
                 </div>
@@ -553,7 +553,7 @@ const Homepage: React.FC = () => {
                   <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Closing issues or pull requests within 5 minutes after they are opened.</p>
                 </div>
               </div>
-              <div className='w-full lg:mb-0 mb-5 lg:w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+              <div className='w-full lg:mb-0 mb-8 lg:w-[24%] h-[335px] p-3 border border-slate-300 rounded-lg'>
                 <div className='w-full h-[130px] bg-yellow-200 flex justify-center items-center'>
                   <img src={Git3} alt="pull-shark" className='w-[30%]' />
                 </div>
@@ -565,7 +565,7 @@ const Homepage: React.FC = () => {
                   <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Achievement when you merge a PR without review.</p>
                 </div>
               </div>
-              <div className='w-full lg:mb-0 mb-5 lg:w-[24%] min-h-[300px] p-3 border border-slate-300 rounded-lg'>
+              <div className='w-full lg:mb-0 mb-5 lg:w-[24%] h-[335px] p-3 border border-slate-300 rounded-lg'>
                 <div className='w-full h-[130px] bg-purple-300 flex justify-center items-center'>
                   <img src={Git4} alt="pull-shark" className='w-[30%]' />
                 </div>
@@ -574,13 +574,13 @@ const Homepage: React.FC = () => {
                     <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
                   </div>
                   <h2>Starstruck</h2>
-                  <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Starstruck: Having a repository with high popularity / a large number of stars.</p>
+                  <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Starstruck: Having a repository with high popularity.</p>
                 </div>
               </div>
             </div>
 
             <Link to={'https://github.com/khoirulhudaa'}>
-              <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98] rounded-full mt-[-22px] lg:mt-5 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:text-[16px] text-[12px] lg:px-8 py-3'>
+              <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98] rounded-md lg:rounded-full mt-[-22px] lg:mt-5 bg-slate-700 lg:bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:text-[16px] text-[12px] lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
                 Look at github <FaArrowRight className='ml-3' />
               </div>
             </Link>
@@ -615,7 +615,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* one */}
-          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 pt-4 lg:mt-0 mt-10 border-y border-y-white w-screen lg:w-full'>
+          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 pt-4 lg:mt-0 lg:border-0 border-b border-b-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -636,7 +636,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/* two */}
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 border-b border-b-white w-screen lg:w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 lg:border-0 border-b border-b-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -657,7 +657,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
 
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 border-b border-b-white w-screen lg:w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 lg:border-0 border-b border-b-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -678,7 +678,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
          
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 border-b border-b-white w-screen lg:w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 lg:border-0 border-b border-b-white w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
