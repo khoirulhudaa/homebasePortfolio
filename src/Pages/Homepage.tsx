@@ -12,6 +12,14 @@ const Homepage: React.FC = () => {
   const [sidebar, setSidebar] = useState<boolean>(false);
   const [text, setText] = useState<string>('');
 
+
+  const DownloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = 'file.pdf'; // Path ke file PDF
+    link.download = 'file.pdf'; // Nama file yang akan di-download
+    link.click();
+  };
+
   return (
     <div className='relative min-h-screen overflow-x-hidden bg-[#0d1117] lg:pl-10'>
         
@@ -53,22 +61,22 @@ const Homepage: React.FC = () => {
             
             <ul className='w-[80%] mt-4 flex flex-col'>
                 <a href="#home" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Home</li>
+                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Home</li>
                 </a>
                 <a href="#product" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Product</li>
+                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Product</li>
                 </a>
                 <a href="#linkedin" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Linkedin</li>
+                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Linkedin</li>
                 </a>
                 <a href="#github" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Github</li>
+                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Github</li>
                 </a>
                 <a href="#certification" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Certification</li>
+                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Certification</li>
                 </a>
                 <a href="#experince" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4' onClick={() => setSidebar(false)}>Pengalaman</li>
+                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Pengalaman</li>
                 </a>
             </ul>
           </div>
@@ -76,25 +84,25 @@ const Homepage: React.FC = () => {
           <div className='lg:flex hidden w-full text-slate-300 py-5 mt-2 pl-[150px] h-[60px]'>
             <ul className='w-[80%] flex items-center justify-between'>
               <a href="#home">
-                <li className='mr-10'>Home</li>
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Home</li>
               </a>
               <a href="#languages">
-                <li className='mr-10'>Languages</li>
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Languages</li>
               </a>
               <a href="#product">
-                <li className='mr-10'>Product</li>
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Product</li>
               </a>
               <a href="#linkedin">
-                <li className='mr-10'>Linkedin</li>
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Linkedin</li>
               </a>
               <a href="#github">
-                <li className='mr-10'>Github</li>
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Github</li>
               </a>
               <a href="#certification">
-                <li className='mr-10'>Certification</li>
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Certification</li>
               </a>
               <a href="#experince">
-                <li className='mr-10'>Pengalaman</li>
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Pengalaman</li>
               </a>
             </ul>
           </div>
@@ -125,14 +133,14 @@ const Homepage: React.FC = () => {
   
           <div className='absolute lg:inline hidden top-[-70px] left-0 lg:right-0'>
             <img loading='lazy' src={Square} alt="square" className='absolute w-[100%] top-[0px] lg:left-[-404px] rotate-[0deg]' />
-            <img loading='lazy' src={Square} alt="square" className='w-[100%] rotate-[180deg]' />
+            <img loading='lazy' src={Square} alt="square" className='absolute w-[100%] rotate-[180deg] z-[1]' />
           </div>
           <div className='w-max flex items-center'>
             <p className='rounded-full border border-white text-center px-5 py-2 w-max text-white flex items-center'>Fresh Graduate</p>
           </div>
           <h1 className='mt-4 text-[35px] lg:text-[94px] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
-          <div className='w-max flex items-center overflow-hidden rounded-[20px]'>
-            <button className='outline-0 border-white border py-3 lg:py-5 px-4 lg:px-10 w-max rounded-lg lg:rounded-full h-max text-center font-[600] my-7 text-white'>Download Resume</button>
+          <div className='relative w-max flex cursor-pointer items-center overflow-hidden z-[22222] rounded-[20px]'>
+            <button onClick={() => DownloadPDF()} className='relative outline-0 bg-white duration-100 text-black border-white border py-3 lg:py-4 hover:bg-transparent px-4 lg:px-10 w-max rounded-lg lg:rounded-full h-max text-center font-[600] my-7 hover:text-white active:scale-[0.98]'>Download Resume</button>
           </div>
         </div>
         
@@ -450,7 +458,7 @@ const Homepage: React.FC = () => {
                 </div>
               </Link>
 
-              <p className='w-full mt-3 leading-loose text-slate-500 text-[14px] lg:text-[15px]'>
+              <p className='w-full mt-3 leading-loose text-slate-500 text-[13px] text-justify lg:text-[15px]'>
               To whom it may concern:
 
               Huda worked with us at Konstruksi.AI developing the core main product as a Frontend developer. Although he was an intern, Huda contributed greatly to the team. Huda has an excellent skill related to Frontend development and always completed his tasks in timely manner. He can perform both individually and within a team as well. I recommend him as a Frontend developer and I believe he will be a great asset to any company.
@@ -458,8 +466,11 @@ const Homepage: React.FC = () => {
             </div>
             
             <Link to={'https://www.linkedin.com/in/muhammad-khoirulhuda-223659207'}>
-              <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-md lg:rounded-full mt-7 lg:mt-16 bg-slate-700 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
+              <div className='lg:flex hidden w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-md mt-7 lg:mt-16 bg-slate-700 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
                 Look at linkedin <FaArrowRight className='ml-3' />
+              </div>
+              <div className='w-[60px] h-[60px] rounded-full lg:hidden flex items-center justify-center border-2 border-slate-600 shadow-md my-5 cursor-pointer active:scale-[0.98] duration-100'>
+                 <FaArrowRight className='relative text-black scale-[1.1] rotate-[-35deg]' />
               </div>
             </Link>
             <img src={Linkedin} alt="linkedin" className='absolute right-4 lg:right-10 bottom-4 lg:flex hidden lg:bottom-9 w-[6%]' />
@@ -580,8 +591,11 @@ const Homepage: React.FC = () => {
             </div>
 
             <Link to={'https://github.com/khoirulhudaa'}>
-              <div className='w-max h-max text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98] rounded-md lg:rounded-full mt-[-22px] lg:mt-5 bg-slate-700 lg:bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:text-[16px] text-[12px] lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
+              <div className='lg:flex hidden w-max h-max text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98] rounded-md mt-[-22px] lg:mt-5 bg-slate-700 lg:bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:text-[16px] text-[12px] lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
                 Look at github <FaArrowRight className='ml-3' />
+              </div>
+              <div className='w-[60px] h-[60px] rounded-full lg:hidden flex items-center justify-center border-2 border-slate-600 shadow-md my-5 cursor-pointer active:scale-[0.98] duration-100'>
+                 <FaArrowRight className='relative text-black scale-[1.1] rotate-[-35deg]' />
               </div>
             </Link>
           </div>
