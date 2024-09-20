@@ -629,7 +629,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* one */}
-          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 pt-4 lg:mt-0 lg:border-0 border-b border-b-white w-screen lg:w-full'>
+          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 pt-4 lg:mt-0 w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -650,7 +650,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/* two */}
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 lg:border-0 border-b border-b-white w-screen lg:w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -671,7 +671,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
 
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 lg:border-0 border-b border-b-white w-screen lg:w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -692,7 +692,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
          
-          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 lg:border-0 border-b border-b-white w-screen lg:w-full'>
+          <div className='relative flex items-center h-max lg:px-0 px-6 lg:h-[400px] lg:pt-0 pt-4 w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
