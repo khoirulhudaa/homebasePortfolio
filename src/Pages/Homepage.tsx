@@ -38,12 +38,6 @@ const Homepage: React.FC = () => {
           <div className='w-[80%] h-[2px] bg-slate-200 my-1'></div>
         </div>
 
-        {/* Sidebar */}
-        <div className={`w-[100vw] h-[100vh] bg-white p-7 bg-white z-[9099999] fixed top-0 ${sidebar ? 'left-0 duration-100' : 'left-[-100%] duration-100'}`}>
-
-        </div>
-
-
         {/* Nabar */}
         <nav className={`absolute left-0 top-0 z-[999999999] py-[20px] w-max lg:w-[100v] h-max lg:before:absolute lg:before:left-[62px] lg:before:top-[25px] lg:before:bottom-[-5px] lg:before:w-[54px] lg:before:h-[54px] lg:before:bg-white lg:before:shadow-md lg:before:shadow-black lg:before:content-["<>"] lg:before:flex lg:before:justify-center lg:before:items-center lg:before:text-slate-800 lg:before:font-bold lg:before:text-[24px] lg:before:rounded-full bg-transparent`}>
 
@@ -53,31 +47,27 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* Sidebar - Mobile only */}
-          <div className={`fixed w-[100vw] h-screen overflow-y-auto bg-white block lg:hidden z-[999999] shadow-md p-6 top-0 ${sidebar ? 'right-0 duration-200' : 'right-[-100%] duration-200 ease-in'}`}>
+          <div className={`fixed w-[100vw] h-screen overflow-y-auto bg-white block lg:hidden z-[999999] shadow-md py-6 top-0 ${sidebar ? 'right-0 duration-200' : 'right-[-100%] duration-200 ease-in'}`}>
             
-            <div onClick={() => setSidebar(false)} className='absolute w-[40px] h-[40px] rounded-lg bg-red-500 text-white flex items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%] shadow-md top-5 right-6'>
+            <div onClick={() => setSidebar(false)} className='absolute w-[40px] h-[40px] rounded-lg bg-red-500 text-white flex z-[44444444] items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%] shadow-md top-5 right-6'>
               <FaTimes />
             </div>
-            
-            <ul className='w-[80%] mt-4 flex flex-col'>
-                <a href="#home" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Home</li>
-                </a>
-                <a href="#product" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Product</li>
-                </a>
-                <a href="#linkedin" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Linkedin</li>
-                </a>
-                <a href="#github" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Github</li>
-                </a>
-                <a href="#certification" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Certification</li>
-                </a>
-                <a href="#experince" className='w-full mb-4 border-b border-b-slate-200'>
-                  <li className='py-4 cursor-pointer' onClick={() => setSidebar(false)}>Pengalaman</li>
-                </a>
+
+            <ul className='w-full mt-7 flex flex-col'>
+              {['home', 'product', 'linkedin', 'github', 'certification', 'experience'].map((item, index) => {
+                const isOdd = index % 2 !== 0; // Check if the index is odd
+                return (
+                  <li key={item} className={`px-6 bg-white border-b border-b-slate-400 w-full py-7 text-[18px] border-b transition-all border-b-slate-200 relative duration-300 ease-in-out ${sidebar ? (isOdd ? `right-0 delay-${index * 300}` : `left-0 delay-${index * 300}`) : (isOdd ? 'right-[-100%] delay-${index * 300}' : 'left-[-100%] delay-${index * 300}')}`}>
+                    <a
+                      href={`#${item}`}
+                      className="px-6 bg-white w-full py-3 text-[18px] cursor-pointer"
+                      onClick={() => setSidebar(false)}
+                    >
+                      {item}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -469,10 +459,10 @@ const Homepage: React.FC = () => {
               <div className='lg:flex hidden w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-md mt-7 lg:mt-16 bg-slate-700 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
                 Look at linkedin <FaArrowRight className='ml-3' />
               </div>
-              <div className='flex items-center w-max mt-1'>
-                <p className='mr-4'>Look at Linkedin</p>
-                <div className='w-[30px] h-[30px] rounded-full lg:hidden flex items-center justify-center border-2 border-slate-800 shadow-md my-5 cursor-pointer active:scale-[0.98] duration-100'>
-                  <FaArrowRight className='relative text-black scale-[0.9] rotate-[-35deg]' />
+              <div className='lg:hidden flex items-center w-max mt-1'>
+                <p className='mr-2'>Look at Linkedin</p>
+                <div className='w-[30px] h-[30px] lg:hidden flex items-center justify-center my-5 cursor-pointer active:scale-[0.98] duration-100'>
+                  <FaArrowRight className='relative text-slate-700 scale-[0.9]' />
                 </div>
               </div>
             </Link>
@@ -606,9 +596,9 @@ const Homepage: React.FC = () => {
                 Look at github <FaArrowRight className='ml-3' />
               </div>
               <div className='flex items-center w-max'>
-                <p className='mr-4'>Look at Github</p>
-                <div className='w-[30px] h-[30px] rounded-full lg:hidden flex items-center justify-center border-2 border-slate-800 shadow-md my-5 cursor-pointer active:scale-[0.98] duration-100'>
-                  <FaArrowRight className='relative text-black scale-[0.9] rotate-[-35deg]' />
+                <p className='mr-2'>Look at Github</p>
+                <div className='w-[30px] h-[30px] lg:hidden flex items-center justify-center my-5 cursor-pointer active:scale-[0.98] duration-100'>
+                  <FaArrowRight className='relative text-slate-700 scale-[0.9]' />
                 </div>
               </div>
             </Link>

@@ -1,4 +1,3 @@
-import { FaTimes } from "react-icons/fa";
 
 const ModalCertification = ({ image, text, close, title }:{ image?: any; text?: string;close?: any; title?: any }) => {
 
@@ -12,12 +11,12 @@ const ModalCertification = ({ image, text, close, title }:{ image?: any; text?: 
                 </div>
             </div>
             <div className="lg:relative h-1/2 lg:h-full w-full lg:w-1/2 lg:pl-8 pt-8">
-                <div onClick={() => close()} className="absolute bg-red-500 text-white -right-4 lg:right-1 font-normal -top-1 lg:-top-2 w-[70px] lg:w-[40px] h-[70px] lg:h-[40px] rounded-full p-2 flex items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%]">
-                    <FaTimes />
-                </div>
                 <h2 className="relative font-bold">{title ?? ''}</h2>
                 <p className="text-slate-500 text-[12px] my-3">2024</p>
                 <p className="w-[96%] mt-4 text-[15px] leading-loose text-slate-600">{text}</p>
+                <div onClick={() => close()} className="relative lg:border border-[1.6px] border-red-600 text-red-600 font-normal w-full h-max lg:py-3 py-4 mt-6 rounded-md flex items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%]">
+                  Close Now
+                </div>
             </div>
         </div>
       </div>
