@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import { FaArrowRight, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { Bali, Cirebon, Earth, Mongodb, FlowTrush, Geospasial, Git1, Git2, Git3, Git4, JS, JWD, Jakarta, Linkedin, Majalengka, Node, OMDB, Reacts, Redux, Square, Square3, SquareLine, Swiftvel, TS, TW, ThreeD, Unipay, Valclass, Weather, HTML, PakYos, Winner, Peserta } from '../Assets'
+import { Bali, Cirebon, Earth, FlowTrush, Geospasial, Git1, Git2, Git3, Git4, HTML, JS, JWD, Jakarta, Linkedin, Majalengka, Mongodb, Node, OMDB, PakYos, Peserta, Reacts, Redux, SIGEo, Square, Square3, SquareLine, Swiftvel, TS, TW, ThreeD, Unipay, Valclass, Weather, Winner } from '../Assets'
 import ModalCertification from '../Components/ModalCertification'
 import '../index.css'
 
 const Homepage: React.FC = () => {
 
   const [isModal, setIsModal] = useState<boolean>(false);
-  const [selectimage, setSelectImage] = useState<string>('');
+  const [selectimage, setSelectImage] = useState<any>(null);
   const [sidebar, setSidebar] = useState<boolean>(false);
   const [text, setText] = useState<string>('');
+  const [title, setTitle] = useState<string>('');
 
 
   const DownloadPDF = () => {
@@ -26,7 +27,7 @@ const Homepage: React.FC = () => {
         {/* Modal */}
         {
           isModal ? (
-            <ModalCertification close={() => setIsModal(false)} title={'I/O Festival 2024 - Web Development'} image={selectimage} text={text} />
+            <ModalCertification close={() => setIsModal(false)} title={title} image={selectimage} text={text} />
           ):
             null
         }
@@ -455,7 +456,7 @@ const Homepage: React.FC = () => {
               </p>
             </div>
             
-            <Link to={'https://www.linkedin.com/in/muhammad-khoirulhuda-223659207'}>
+            <Link to={'https://www.linkedin.com/in/muhammadkhoirulhuda/'}>
               <div className='lg:flex hidden w-max h-max text-white cursor-pointer hover:brightness-[90%] text-[12px] lg:text-[16px] active:scale-[0.98] rounded-md mt-7 lg:mt-16 bg-slate-700 bg-slate-800 flex items-center justify-center cursor-pointer px-6 lg:px-8 py-4 lg:py-3 lg:mb-0 mb-4'>
                 Look at linkedin <FaArrowRight className='ml-3' />
               </div>
@@ -649,7 +650,30 @@ const Homepage: React.FC = () => {
               <h3 onClick={() => {
                 setIsModal(true)
                 setSelectImage(Jakarta)
+                setTitle('I/O Festival 2024')
                 setText('National-level team-based Web Development Competition with a maximum of three members per team in the I/O Festival 2024 at Tarumanegara University, Jakarta.')
+              }} className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-10 hover:brightness-[90%] active:scale-[0.99] text-blue-300 flex items-center w-max'>_Show Certificate<FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
+            </div>
+          </div>
+          {/* Two */}
+          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 lg:mt-0 w-screen lg:w-full'>
+            <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
+              <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
+            </div>
+            <div className='w-full relative left-[-1px] lg:left-[-100px] mt-8'>
+              <div className='lg:ml-[120px] mt-[0px] mb-5 flex items-center'>
+                <img src={Winner} alt="winner-icon" className='w-[30px]' />
+                <div className='ml-5 mt-[0px] w-max border border-white bg-white text-blue-700 rounded-full flex items-center text-center px-5 py-1 shadow-lg'>        
+                  Cirebon District Innovation Competition
+                </div>
+              </div>
+              <h2 className='text-[24px] lg:text-[60px] lg:ml-[110px] relative top-[5px] bg-gradient-to-r from-white to-slate-500 text-transparent w-[94vw] lg:w-[70vw] text-left bg-clip-text'>1st Place - District</h2>
+              <p className='lg:text-white lg:ml-[110px] mt-5 w-full lg:text-[16px] text-[14px] text-slate-300 text-left lg:w-[75%] leading-loose'>The Cirebon District Innovation Competition 2024 by Bapelitbangda encourages community creativity to improve services and welfare.</p>
+              <h3 onClick={() => {
+                setIsModal(true)
+                setSelectImage(SIGEo)
+                setTitle('Cirebon District Innovation Competition')
+                setText('The Cirebon District Innovation Competition 2024 is organized by Bapelitbangda to promote community creativity and innovation. It aims to develop solutions that improve service quality and welfare in Cirebon District.')
               }} className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-10 hover:brightness-[90%] active:scale-[0.99] text-blue-300 flex items-center w-max'>_Show Certificate<FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
             </div>
           </div>
@@ -670,6 +694,7 @@ const Homepage: React.FC = () => {
               <h3 onClick={() => {
                 setIsModal(true)
                 setSelectImage(Majalengka)
+                setTitle('Dies Natalis HMIF')
                 setText('National-level Web Design Competition for Students at the Dies Natalis HMIF event at Majalengka University, Majalengka on May 20, 2024.')}}
                className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-10 hover:brightness-[90%] active:scale-[0.99] text-blue-300 flex items-center w-max'>_Show Certificate <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
             </div>
@@ -691,6 +716,7 @@ const Homepage: React.FC = () => {
               <h3 onClick={() => {
                 setIsModal(true)
                 setSelectImage(Cirebon)
+                setTitle('IKMIMATCHCHAMPIONSHIP')
                 setText('Inter-College Landing Page Web Competition exclusively for STMIK IKMI CIREBON students at the IKMIMATCHCHAMPIONSHIP event from August 18 to 26, 2023.')}}
                className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-10 hover:brightness-[90%] active:scale-[0.99] text-blue-300 flex items-center w-max'>_Show Certificate <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
             </div>
@@ -712,6 +738,7 @@ const Homepage: React.FC = () => {
               <h3 onClick={() => {
                 setIsModal(true)
                 setSelectImage(Bali)
+                setTitle('INTECHFEST 2020')
                 setText('National-level Web Design Competition for High School Students (SMA/SMK) at INTECHFEST 2020 with the theme "Information and Technology can Support Future Life".')}} className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-10 hover:brightness-[90%] active:scale-[0.99] text-blue-300 flex items-center w-max'>_Show Certificate <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
             </div>
           </div>
@@ -732,6 +759,7 @@ const Homepage: React.FC = () => {
               <h3 onClick={() => {
                 setIsModal(true)
                 setSelectImage(JWD)
+                setText('training program - JWD')
                 setText(`It's a certification training program for Junior Web Developers based on national competencies and one of the eight academies under the Digital Talent Scholarship (DTS) in 2022.`)}} className='cursor-pointer ml-1 lg:ml-[115px] mt-[30px] text-[20px] mb-10 hover:brightness-[90%] active:scale-[0.99] text-blue-300 flex items-center w-max'>_Show Certificate <FaArrowRight className='ml-4 relative top-[0.8]' /> </h3>
             </div>
           </div>

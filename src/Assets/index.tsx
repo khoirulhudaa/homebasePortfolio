@@ -9,6 +9,7 @@ import Reacts from './react.png'
 import BS from './bs.svg'
 import TW from './tw.png'
 import JS from './js.png'
+import SIGEo from './SIGEO.png'
 import Circle from './circle.svg'
 import Square from './square.svg'
 import Circles from './circles.svg'
@@ -53,6 +54,7 @@ export {
     Winner,
     Peserta,
     Jakarta,
+    SIGEo,
     Bali,
     ExternalLink,
     PakYos,
