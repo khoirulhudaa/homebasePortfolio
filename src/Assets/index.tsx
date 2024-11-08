@@ -45,12 +45,14 @@ import Linkedin from './linkedin.png'
 import ExternalLink from './sharee.png'
 import Winner from './streak.png'
 import Peserta from './winner.png'
+import Puitisy from './puitisy.png'
 
 export {
     Linkedin,
     ThreeD,
     Cirebon,
     Majalengka,
+    Puitisy,
     Winner,
     Peserta,
     Jakarta,

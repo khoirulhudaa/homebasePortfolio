@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaArrowRight, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { Bali, Cirebon, Earth, FlowTrush, Geospasial, Git1, Git2, Git3, Git4, HTML, JS, JWD, Jakarta, Linkedin, Majalengka, Mongodb, Node, OMDB, PakYos, Peserta, Reacts, Redux, SIGEo, Square, Square3, SquareLine, Swiftvel, TS, TW, ThreeD, Unipay, Valclass, Weather, Winner } from '../Assets'
+import { Bali, Cirebon, Earth, FlowTrush, Geospasial, Git1, Git2, Git3, Git4, HTML, JS, JWD, Jakarta, Linkedin, Majalengka, Mongodb, Node, OMDB, PakYos, Peserta, Puitisy, Reacts, Redux, SIGEo, Square, Square3, SquareLine, Swiftvel, TS, TW, ThreeD, Unipay, Valclass, Weather, Winner } from '../Assets'
 import ModalCertification from '../Components/ModalCertification'
 import '../index.css'
 
@@ -129,7 +129,7 @@ const Homepage: React.FC = () => {
           <div className='w-max flex items-center'>
             <p className='rounded-full border border-white text-center px-5 py-2 w-max text-white flex items-center'>Fresh Graduate</p>
           </div>
-          <h1 className='mt-4 text-[35px] lg:text-[5.4rem] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
+          <h1 className='mt-4 text-[35px] lg:text-[5.5em] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
           <div className='relative w-max flex cursor-pointer items-center overflow-hidden z-[22222] rounded-[20px]'>
             <button onClick={() => DownloadPDF()} className='relative outline-0 bg-white duration-100 text-black border-white border py-3 lg:py-4 hover:bg-transparent px-4 lg:px-10 w-max rounded-lg lg:rounded-full h-max text-center font-[600] my-7 hover:text-white active:scale-[0.98]'>Download Resume</button>
           </div>
@@ -406,7 +406,7 @@ const Homepage: React.FC = () => {
                     </Link>
                   </div>
                   <div className='w-[100%] h-max overflow-hidden rounded-[10px] mt-[20px] lg:mt-[40px] border p-2 border-slate-800'>
-                    <img src={OMDB} alt="OMDB-project" className='rounded-md hover:grayscale-[100%] h-nax duration-300' />
+                    <img src={Puitisy} alt="OMDB-project" className='rounded-md hover:grayscale-[100%] h-nax duration-300' />
                   </div>
                 </div>
 
