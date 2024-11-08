@@ -55,7 +55,7 @@ const Homepage: React.FC = () => {
             </div>
 
             <ul className='w-full mt-7 flex flex-col'>
-              {['home', 'product', 'linkedin', 'github', 'certification', 'experience'].map((item, index) => {
+              {['home', 'product', 'linkedin', 'experience', 'github', 'certifications'].map((item, index) => {
                 const isOdd = index % 2 !== 0; // Check if the index is odd
                 return (
                   <li key={item} className={`px-6 bg-white border-b border-b-slate-400 w-full py-7 text-[18px] border-b transition-all border-b-slate-200 relative duration-300 ease-in-out ${sidebar ? (isOdd ? `right-0 delay-${index * 300}` : `left-0 delay-${index * 300}`) : (isOdd ? 'right-[-100%] delay-${index * 300}' : 'left-[-100%] delay-${index * 300}')}`}>
@@ -86,14 +86,14 @@ const Homepage: React.FC = () => {
               <a href="#linkedin">
                 <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Linkedin</li>
               </a>
+              <a href="#experience">
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Experiences</li>
+              </a>
               <a href="#github">
                 <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Github</li>
               </a>
-              <a href="#certification">
-                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Certification</li>
-              </a>
-              <a href="#experince">
-                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Pengalaman</li>
+              <a href="#certifications">
+                <li className='mr-10 cursor-pointer hover:scale-[0.99] hover:text-slate-400'>Certifications</li>
               </a>
             </ul>
           </div>
@@ -129,7 +129,7 @@ const Homepage: React.FC = () => {
           <div className='w-max flex items-center'>
             <p className='rounded-full border border-white text-center px-5 py-2 w-max text-white flex items-center'>Fresh Graduate</p>
           </div>
-          <h1 className='mt-4 text-[35px] lg:text-[5.5em] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
+          <h1 className='mt-4 text-[35px] lg:text-[5.5em] w-[82vw] font-bold leading-normal text-white'>Design & Code: My Front-end Journey</h1>
           <div className='relative w-max flex cursor-pointer items-center overflow-hidden z-[22222] rounded-[20px]'>
             <button onClick={() => DownloadPDF()} className='relative outline-0 bg-white duration-100 text-black border-white border py-3 lg:py-4 hover:bg-transparent px-4 lg:px-10 w-max rounded-lg lg:rounded-full h-max text-center font-[600] my-7 hover:text-white active:scale-[0.98]'>Download Resume</button>
           </div>
@@ -471,7 +471,7 @@ const Homepage: React.FC = () => {
           </div>
         </div>
 
-      <div className='relative w-full lg:mt-0 mt-[50px] flex flex-col z-[4444] lg:px-0 border-box lg:ml-[48px] h-max lg:border-l-[3px] border-white'>
+      <div id='experience' className='relative w-full lg:mt-0 mt-[50px] flex flex-col z-[4444] lg:px-0 border-box lg:ml-[48px] h-max lg:border-l-[3px] border-white'>
           
           <div id='asteroid1b'></div>
           <div id='asteroid2b'></div>
@@ -633,7 +633,7 @@ const Homepage: React.FC = () => {
           </div>
 
           {/* one */}
-          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 lg:mt-0 w-screen lg:w-full'>
+          <div id='certifications' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 lg:mt-0 w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
@@ -655,7 +655,7 @@ const Homepage: React.FC = () => {
             </div>
           </div>
           {/* Two */}
-          <div id='certification' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 lg:mt-0 w-screen lg:w-full'>
+          <div id='certifications' className='relative flex items-center lg:px-0 px-4 h-max lg:h-[400px] lg:pt-0 lg:mt-0 w-screen lg:w-full'>
             <div className='w-[150px] relative lg:flex hidden h-[200] lg:flex hidden'>
               <img loading='lazy' src='https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg' alt="line" />
             </div>
