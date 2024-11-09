@@ -487,7 +487,7 @@ const Homepage: React.FC = () => {
           <div id='star6b' className='animate animate-pulse'></div>
           <div id='star7b' className='animate animate-pulse'></div>
 
-          <img src={Earth} alt="earth" className='absolute right-[-700px] opacity-[0.2] top-[-200px]' />
+          <img src={Earth} alt="earth" className='absolute right-[-700px] scale-[1.3] opacity-[0.2] top-[200px]' />
 
           <div className='relative z-[4444] pb-[0px] px-4 lg:px-16 w-[100%] mt-[0px] lg:mt-20 lg:mb-20 h-max ml-[0px]'>
             <div className='w-max mb-3 border border-white rounded-full text-white flex lg:ml-0 items-center text-center px-5 py-1'>
@@ -547,9 +547,11 @@ const Homepage: React.FC = () => {
                   <img src={Git1} alt="pull-shark" className='w-[30%]' />
                 </div>
                 <div className='w-full p-4'>
-                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
-                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
-                  </div>
+                  <Link to={'https://github.com/khoirulhudaa?achievement=pull-shark&tab=achievements'}>
+                    <div className='w-[30px] h-[30px] cursor-pointer rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                      <FaArrowRight className='relative cursor-pointer hover:brightness-[80%] text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                    </div>
+                  </Link>
                   <h2>Pull Shark - 2x</h2>
                   <p className='mt-2 text-slate-500 text-[14px] leading-loose'>@khoirulhudaa opened pull requests that have been merged.</p>
                 </div>
@@ -559,9 +561,11 @@ const Homepage: React.FC = () => {
                   <img src={Git2} alt="pull-shark" className='w-[30%]' />
                 </div>
                 <div className='w-full p-4'>
-                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
-                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
-                  </div>
+                  <Link to={'https://github.com/khoirulhudaa?tab=achievements&achievement=quickdraw'}>
+                    <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                      <FaArrowRight className='relative cursor-pointer hover:brightness-[80%] text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                    </div>
+                  </Link>
                   <h2>Quickdraw</h2>
                   <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Closing issues or pull requests within 5 minutes after they are opened.</p>
                 </div>
@@ -571,9 +575,11 @@ const Homepage: React.FC = () => {
                   <img src={Git3} alt="pull-shark" className='w-[30%]' />
                 </div>
                 <div className='w-full p-4'>
-                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
-                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
-                  </div>
+                  <Link to={'https://github.com/khoirulhudaa?tab=achievements&achievement=yolo'}>
+                    <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                      <FaArrowRight className='relative cursor-pointer hover:brightness-[80%] text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                    </div>
+                    </Link>
                   <h2>Yolo</h2>
                   <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Achievement when you merge a PR without review.</p>
                 </div>
@@ -583,9 +589,11 @@ const Homepage: React.FC = () => {
                   <img src={Git4} alt="pull-shark" className='w-[30%]' />
                 </div>
                 <div className='w-full p-4'>
-                  <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
-                    <FaArrowRight className='relative text-blue-500 scale-[1.1] rotate-[-35deg]' />
-                  </div>
+                  <Link to={'https://github.com/khoirulhudaa?tab=achievements&achievement=starstruck'}>
+                    <div className='w-[30px] h-[30px] rounded-full ml-auto flex items-center justify-center cursor-pointer p-1'>
+                      <FaArrowRight className='relative cursor-pointer hover:brightness-[80%] text-blue-500 scale-[1.1] rotate-[-35deg]' />
+                    </div>
+                  </Link>
                   <h2>Starstruck</h2>
                   <p className='mt-2 text-slate-500 text-[14px] leading-loose'>Starstruck: Having a repository with high popularity.</p>
                 </div>
